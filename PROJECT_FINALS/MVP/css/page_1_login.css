@@ -18,7 +18,7 @@ body {
     grid-column: 3/ 7;
     grid-row: 2/9;
 
-    background-image: url(/PROJECT_FINALS/MVP/assets/common/bg.png);
+    background-image: url(../assets/common/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
