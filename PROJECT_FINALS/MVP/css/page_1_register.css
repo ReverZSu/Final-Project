@@ -100,7 +100,7 @@ input[type="checkbox"] {
 .btn {
     width: 85%;
     height: 50px;
-    background: #E1AF56;
+    background: #fdae02;
     border-radius: 40px;
     border: none;
     outline: none;
@@ -133,7 +133,7 @@ input[type="checkbox"] {
 .register_link a{
     text-decoration: none;
     font-weight: 600;
-    color: #E1AF56;
+    color: #fdae02;
 }
 .footer{
     grid-column: 1/13;
@@ -150,6 +150,7 @@ input[type="checkbox"] {
     .container_picture{
         grid-column: 2/12;
         grid-row: 2/5;
+        background-size: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         border-bottom-left-radius: 0;

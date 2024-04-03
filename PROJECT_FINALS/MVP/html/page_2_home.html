@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Opportunity</title>
     <link rel = "icon" href ="../assets/common/logo.png" type = "image/x.icon">
     <link rel="stylesheet" href="../css/page_2_home.css">
@@ -19,19 +20,18 @@
             </a>
         </div>
         <div class="navigation">
-            <a href="Home" class="active">Home</a>
-            <a href="Scholarships">Scholarships</a>
+            <a href="#" class="active">Home</a>
+            <a href="#">Scholarships</a>
+            <a href="#">Universities</a>
             <a href="#">About Us</a>
             <a href="#">Contacts</a>
             <input type="search" class="search_box" placeholder="Search..">
         </div>
         <div class="content">
             
-
-
-
         </div>
         <div class="content_2">
+            
             <div class="holder">
                 <h1>Welcome To</h1>
                 <h1 style="font-size: 70px; line-height: 5px; color: #ffb703;">Opportunity</h1>
@@ -45,8 +45,96 @@
                   </a>
             </div>
         </div>
+        <!---sliding-->
+        <div class="content_3">
+            <div class="info">
+            <h1>CHOOSE YOUR UNIVERSITY</h1>
+            <p>Choosing a university is not just about picking a place to earn a degree; it's about finding a community where you can grow intellectually and personally.</p>
+            </div>
+            <div class="container2">
+                <div class="slide">
+                    
+                    <div class="item" style="background-image: url(../assets/home/adam-build.jpg);">
+                        <div class="content_univ">
+                            <div class="name">this </div>
+                            <div class="des">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+                
+                    <div class="item" style="background-image: url(../assets/common/bg2.png);">
+                        <div class="content_univ">
+                            <div class="name">universities overview</div>
+                            <div class="des">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+
+                    <div class="item" style="background-image: url(../assets/home/admu-build.jpg);">
+                        <div class="content_univ">
+                            <div class="name">ADMU</div>
+                            <div class="des">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                            <button>See More</button>
+                        </div>
+                        
+                    </div>
+                
+                
+                    <div class="item" style="background-image: url(../assets/home/dlsu-build.jpg);">
+                        <div class="content_univ">
+                            <div class="name">DLSU</div>
+                            <div class="des">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                            <button>See More</button>
+                        </div>
+                        
+                    </div>
+                
+                
+                    <div class="item" style="background-image: url(../assets/home/feu-build.jpg);">
+                        <div class="content_univ">
+                            <div class="name">FEU</div>
+                            <div class="des">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(../assets/home/dlsu-build.jpg);">
+                        <div class="content_univ">
+                            <div class="name">DLSU</div>
+                            <div class="des">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+                    <div class="item" style="background-image: url(../assets/home/dlsu-build.jpg);">
+                        <div class="content_univ">
+                            <div class="name">DLSU</div>
+                            <div class="des">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</div>
+                            <button>See More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
         <div class="footer">footer</div>
     </div>
     
+    <script>
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+
+        next.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').appendChild(items[0])
+        })
+
+        prev.addEventListener('click', function(){
+            let items = document.querySelectorAll('.item')
+            document.querySelector('.slide').prepend(items[items.length - 1])
+        })
+    </script>
 </body>
 </html>
