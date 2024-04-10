@@ -183,10 +183,10 @@ body {
   }
 
 .content_3{
- background-color: red;
-  box-shadow:-10px 20px 20px #1d3557a2;
+
+
   grid-column: 1/15;
-  grid-row: 30/31;
+  grid-row: 20/25;
   padding: 3rem;
   display: flex;
   justify-content: space-evenly;
@@ -363,7 +363,10 @@ body {
 grid-row: 10/12;
 grid-column: 1/5;
 margin-left: 10px;
-background-image: url(../assets/home/eng.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.308)), url(../assets/home/eng.jpg);
 padding: 2rem;
 display: flex;
 align-items: center;
@@ -375,8 +378,12 @@ transition: all 0.3s;
 .cc2{
   grid-row: 12/14;
   grid-column: 1/5;
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+  background-repeat: no-repeat;
   margin-left: 10px;
-  background-image: url(../assets/home/bus.jpg);
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.308)),url(../assets/home/bus.jpg);
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -387,7 +394,11 @@ transition: all 0.3s;
 .cc3{
   grid-row: 10/12;
   grid-column: 5/9;
-  background-image: url(../assets/home/arch.jpg);
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+  background-repeat: no-repeat;
+  background-image:  linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.308)),url(../assets/home/arch.jpg);
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -399,7 +410,11 @@ transition: all 0.3s;
 .cc4{
   grid-row: 12/14;
   grid-column: 5/9;
-  background-image: url(../assets/home/med.jpg);
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.308)),url(../assets/home/med.jpg);
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -412,7 +427,11 @@ transition: all 0.3s;
   grid-row: 10/14;
   grid-column: 9/13;
   margin-right: 10px;
-  background-image: url(../assets/home/IT.jpg);
+  background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.562), rgba(0, 0, 0, 0.308)),url(../assets/home/IT.jpg);
   padding: 2rem;
   display: flex;
   align-items: center;
@@ -430,20 +449,27 @@ transition: all 0.3s;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.821);
 }
 .Courses{
+
   display: flex;
   align-items: center;
   justify-content: center;
-  color:white
+  color:white;
+  border-radius: 20px;
+  font-weight: bold;
+  text-shadow:10px 10px 20px rgba(20, 20, 20, 0.422);
+  font-size: 45px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 .content_4{
-  background-color:  #f0b6528a;
-  color: #1d3557;
+ background-color:  #f0b6528a;
+ color: #1d3557;
  grid-row: 9/20;
  grid-column: 1/15;
  display: flex;
  justify-content: center;
  text-align: center;
- margin-top: 30px;
+ margin-top: 20px;
  margin-bottom: 30px;
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
@@ -456,18 +482,19 @@ transition: all 0.3s;
 } 
 
 .uni1{
-  background-image: url(../assets/home/dlsu.png );
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: center;  
-  grid-row: 15/17;
+ grid-row: 15/17;
   grid-column: 9/13;
   margin-left: 10px;
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   transition: all 0.3s;
+}
+.uni1 .universities img{
+  width: 250px;
+  filter: drop-shadow(5px 5px 5px rgb(41, 40, 40));
 }
 .uni2{
   grid-row: 17/19;
@@ -477,20 +504,15 @@ transition: all 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   transition: all 0.3s;
 }
-.uni2:hover img{
-  
-}
+
 .uni2 .universities img{
   width: 250px;
   filter: drop-shadow(5px 5px 5px rgb(41, 40, 40));
 }
 .uni3{
-  background-image: url(../assets/home/ust.png);
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: center;  
   grid-row: 15/17;
   grid-column: 5/9;
   margin-left: 10px;
@@ -498,15 +520,14 @@ transition: all 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.36);
+  text-align: center;
   transition: all 0.3s;
 }
+.uni3 .universities img{
+  width: 250px;
+  filter: drop-shadow(5px 5px 5px rgb(41, 40, 40));
+}
 .uni4{
-
-  background-image: url(../assets/home/pup.png);
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: center;
   grid-row: 17/19;
   grid-column: 5/9;
   margin-left: 10px;
@@ -514,25 +535,44 @@ transition: all 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.36);
+  text-align: center;
   transition: all 0.3s;
 }
+.uni4 .universities img{
+  width: 250px;
+  filter: drop-shadow(5px 5px 5px rgb(41, 40, 40));
+}
 .uni5{
-  background-image: url(../assets/home/UP.png);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  border-style: none;
-  grid-row: 15/19;
+  grid-row: 15/17;
   grid-column: 1/5;
   margin-left: 10px;
   padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.36);
+  text-align: center;
   transition: all 0.3s;
 }
+.uni5 .universities img{
+  width: 250px;
+  filter: drop-shadow(5px 5px 5px rgb(41, 40, 40));
+}
+.uni6{
+  grid-row: 17/19;
+  grid-column: 1/5;
+  margin-left: 10px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    text-align: center;
+  transition: all 0.3s;
+}
+.uni6 .universities img{
+  width: 250px;
+  filter: drop-shadow(5px 5px 5px rgb(41, 40, 40));
+}
+
 .content_5{
   color: #1d3557;
   grid-row: 14/20;
@@ -550,7 +590,10 @@ transition: all 0.3s;
 .uni5:hover{
   transform: translateY(-3px);
   filter: drop-shadow (2px 10px 5px rgba(68, 68, 68, 0.36));
+}
 
+.universities h1{
+  color: #1d3557;
 }
 
 
@@ -578,7 +621,7 @@ transition: all 0.3s;
 .footer{
   background-color: red;
   grid-column: 1/15;
-  grid-row: 18/20;
-margin-top: 50px;
+  grid-row: 30/40;
+margin-top: 40px;
 
 }
