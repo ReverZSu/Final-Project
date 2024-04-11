@@ -587,7 +587,8 @@ background-size: cover;
 .uni2:hover,
 .uni3:hover,
 .uni4:hover,
-.uni5:hover{
+.uni5:hover,
+.uni6:hover{
   transform: translateY(-3px);
   filter: drop-shadow (2px 10px 5px rgba(68, 68, 68, 0.36));
 }
