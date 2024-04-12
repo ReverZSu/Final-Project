@@ -183,8 +183,6 @@ body {
   }
 
 .content_3{
-
-
   grid-column: 1/15;
   grid-row: 20/25;
   padding: 3rem;
@@ -205,7 +203,7 @@ body {
   font-size: 30px;
   color: #1d3557; 
   transition: all 0.3s ease-in-out;
-}
+} 
 .content_3 i:hover{
   transform: scale(1.2);
 }

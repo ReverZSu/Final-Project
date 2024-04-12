@@ -71,14 +71,18 @@ body {
     border-bottom: 2px solid #1d3557;
     transform:  translateY(-3px);
 }
+.active{
+    border-bottom: 2px solid #1d3557;
+}
 .course{
-
+    
     grid-row: 2/3;
-    grid-column: 5/9;
+    grid-column: 1/13;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    
 }
 
 .cc1{
@@ -266,7 +270,11 @@ justify-content: center;
 box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.36);
 transition: all 0.3s;   
 }
-
+.footer{
+    background-color: red;
+    grid-row: 1/13;
+    grid-column: 9/10;
+}
 
 
 
