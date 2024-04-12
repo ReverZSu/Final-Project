@@ -75,13 +75,14 @@ body {
     border-bottom: 2px solid #1d3557;
 }
 .course{
-    
+   color: #1d3557; 
     grid-row: 2/3;
     grid-column: 1/13;
     display: flex;
     align-items: center;
     text-align: center;
     justify-content: center;
+    letter-spacing: 5px;
     
 }
 
@@ -270,40 +271,6 @@ justify-content: center;
 box-shadow: 2px 2px 5px rgba(68, 68, 68, 0.36);
 transition: all 0.3s;   
 }
-.footer{
-    background-color: red;
-    grid-row: 1/13;
-    grid-column: 9/10;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .text{
     display: flex;
@@ -331,4 +298,24 @@ transition: all 0.3s;
 .cc12:hover{
   transform: translateY(-3px);
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.821);
+}
+
+.footer{
+    background-color: #fdae02;
+    grid-row: 11/13;
+    grid-column: 1/13;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.footer img{
+    width: 50px;
+    margin: 0 2rem;
+
+}
+.footer hr {
+    color: white;
+    width: 10px;
+
 }

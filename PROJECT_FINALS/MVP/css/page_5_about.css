@@ -152,7 +152,7 @@ body {
 
 
 .footer{
-    background-color: #f09c0c88;
+    background-color:#f09c0c;
     grid-row: 17/ span 2;
     grid-column: 1/13;
     display: flex;
