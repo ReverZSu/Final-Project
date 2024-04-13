@@ -246,6 +246,7 @@ body {
   color: white;
   
   transition: all 0.5s ease;
+  
 }
 
 .info button:hover{
@@ -478,6 +479,23 @@ background-size: cover;
   font-size: 20px;
   font-weight: 500;
   line-height: 40px;
+  
+}
+.infoo p:nth-child(3){
+  color: red;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  border-right: 2px solid;
+  width: 30%;
+  height: 30px;
+  animation:
+    typing 10s steps(34),
+    cursor .4s step-end infinite alternate;
+  animation-timeline: view();
+  animation-range-start:cover ;
+  animation-range-end: 500px;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .univ_info2{
   grid-column: 3/11;
@@ -718,26 +736,6 @@ background-size: cover;
 
 
 
-.footer{
- 
-background-color: #efe41c8b;
-  grid-column: 1/13;
-  grid-row: 42/45;
-  display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer img{
-    width: 50px;
-    margin: 0 2rem;
-
-}
-.footer hr {
-    color: white;
-    width: 10px;
-
-}
 
 
 @keyframes GoIn{
@@ -799,3 +797,117 @@ background-color: #efe41c8b;
   animation: scrolling linear ;
   animation-timeline: scroll(root);
 */
+@keyframes cursor{
+  50%{
+    border-color: transparent;
+  }
+}
+@keyframes typing{
+  from{
+    width: 0;
+  }
+}
+
+.footer{
+  background-color: rgb(247, 211, 114);
+  grid-column: 1/13;
+  grid-row: 42/46;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_1{
+  width: 80%;
+  height: 80%;
+  
+}
+
+.footer_holder{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.footer_nav a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  
+  color: #1d3557;
+}
+.footer_nav p{
+  transition: transform 0.2s ease;
+}
+.footer_nav p:hover{
+  transform: translateX(10px);
+  color: #51719b;
+}
+.footer_logo img{
+  width: 80px;
+}
+.footer_logo{
+  text-transform: uppercase;
+}
+
+hr{
+  background-color: rgb(253, 174, 3);
+  height: 3px;
+  border: none;
+  margin-bottom: 40px;
+}
+.soc_med{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 40px;
+}
+.soc_med i{
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.soc_med i:hover{
+  transform: translateY(-5px);
+}
+.credit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.basta{
+  display: flex;
+  justify-content: space-between;
+  
+  width: 50%;
+}
+
+.bot{
+  color: #1d3557;
+}
+.bot input{
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+}
+.bot button{
+  outline: none;
+  border: none;
+  background-color: #1d3557;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+
