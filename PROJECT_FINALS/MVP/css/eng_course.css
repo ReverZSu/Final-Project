@@ -78,14 +78,15 @@ body {
     grid-row: 2/8;
     grid-column: 2/12;
 
-    background-image:  url('../assets/home/eng.jpg');
-    animation: pic_eng 5s infinite;
+    background-image:  url('../assets/eng/eng4.jpg');
+    filter: brightness(30%);
+    /*animation: pic_eng 5s infinite;*/
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
 
     border-radius: 20px;
-    box-shadow: inset 2px 2px 20px rgba(6, 5, 5, 0.852);
+    box-shadow: inset 2px 2px 20px rgba(6, 5, 5, 0.979);
     
     display: flex;
     justify-content: center;
@@ -104,15 +105,25 @@ body {
     text-transform: uppercase;
     font-size: 40px;
     overflow: hidden;
+    text-align: center;
 }
 
 /* this is the mother of all shit */
 .container_2{ 
-    height: 100vh;
+    height: 80vh;
     display:flex;
     justify-content: center;
     align-items: center;
     margin: 0 8%;
+
+}
+.container_3{ 
+    height: 80vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 8%;
+    
     
 }
 /* pinaka square */
@@ -129,13 +140,14 @@ body {
         overflow: hidden;
         
         color: white;
-
-        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.729);
+        font-size: 20px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.925);
+        border-radius: 20px;
 }
 
 /* size kapag hinover ung square */
 .sliding:hover{
-    width: 200%;
+    width: 300%;
 }
 
 /* eto ung nasa display na text when not hovering */
@@ -150,7 +162,7 @@ body {
 }
 .sliding h1:nth-child(2) {
     opacity: 0; /* Initially hide the h1 element */
-    transition: opacity 2s ease; /* Apply transition for opacity */
+    transition: opacity 2s ease ; /* Apply transition for opacity */
 }
 
 /* Show the h1 element with fade-in effect when the .sliding div is hovered */
@@ -175,31 +187,93 @@ body {
 
 
 /* IMAGES*/
+.sliding:nth-child(1){
+    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/ae.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    animation-name: sliding_animation;
+    animation-timeline: view();
+    animation-range:entry;
+}
 .sliding:nth-child(2){
-    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/eng1.jpg);
+    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/chem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    animation-name: sliding_animation;
+    animation-timeline: view();
+    animation-range:entry;
+}
+.sliding:nth-child(3){
+    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/ce.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    animation-name: sliding_animation;
+    animation-timeline: view();
+    animation-range:entry;
+}
+.sliding:nth-child(4){
+    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/cpe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    animation-name: sliding_animation;
+    animation-timeline: view();
+    animation-range:entry;
+}
+.sliding:nth-child(5){
+    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/ee.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    animation-name: sliding_animation;
+    animation-timeline: view();
+    animation-range:entry;
+}
+
+/* 2nd, 5*/
+.container_3 .sliding:nth-child(1){
+    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/ece.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.container_3 .sliding:nth-child(2){
+    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/ge.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.container_3 .sliding:nth-child(3){
+    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/ie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.container_3  .sliding:nth-child(4){
+    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/mae.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+.container_3 .sliding:nth-child(5){
+    background-image: linear-gradient(180deg,rgba(127, 127, 127, 0.299),black),url(../assets/eng/me.jpg);
     background-repeat: no-repeat;
     background-size: cover; 
 }
 @keyframes pic_eng {
     0%{
         background-image: url(../assets/eng/eng3.jpg);
-        filter: brightness(50%);
+        filter: brightness(30%);
     }
     25%{
         background-image: url(../assets/eng/eng2.jpg);
-        filter: brightness(50%);
+        filter: brightness(30%);
     }
     50%{
-        background-image: url(../assets/eng/eng3.jpg);
-        filter: brightness(50%);
+        background-image: url(../assets/eng/ie.jpg);
+        filter: brightness(30%);
     }
     75%{
         background-image: url(../assets/eng/eng4.jpg);
-        filter: brightness(50%);
+        filter: brightness(30%);
     }
     100%{
         background-image: url(../assets/eng/eng3.jpg);
-        filter: brightness(50%);
+        filter: brightness(30%);
     }
 }
 
@@ -211,8 +285,18 @@ body {
         opacity: 1;
     }
 }
-
-
+@keyframes sliding_animation{
+    from{
+        
+        scale: .8;
+        opacity: 0;
+    }
+    to{
+        
+        scale: 1;
+         opacity: 1;
+    }
+}
 
 
 
