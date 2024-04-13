@@ -46,8 +46,8 @@ body {
         transform 0.3s;
 }
 .search_box{
-    width: 25%;
-    height: 60%;
+    width: 40%;
+    height: 50%;
     background: white;
     color: black;
     border: 2px solid rgb(100, 94, 94);
