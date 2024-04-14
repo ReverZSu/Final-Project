@@ -42,7 +42,7 @@ body {
     align-items: center;
     padding: 1rem;
     padding-right: 5rem;
-
+    
 
 }
 
@@ -101,6 +101,7 @@ body {
     grid-auto-rows: minmax(100px, auto);
 
     z-index: -1;
+    
 }
 .picture_text{
     grid-column: 3/8;
@@ -110,6 +111,7 @@ body {
     color: white;
     text-transform: uppercase;
     font-size: 20px;
+    animation: GoIn 1s  ;
 }
 .picture_text h1{
     color: yellow;
@@ -126,21 +128,24 @@ body {
             0 32px 64px -48px rgb(0,0,0,0.5);
 
     text-align: center;
-    padding: 2rem;
+    padding: 2rem 5rem;
 
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: GoIn 1s  ;
 }
 
 i{
     font-size: 3rem;
+    color: #1d3557;
 }
 #copyText{
     font-weight: 600;
     transition: transform 0.3s;
     color: red;
-    
+    cursor: pointer;
+    font-size: 20px;
 }
 #copyText:hover{
     transform: translateY(-3px) scale(1.1);
@@ -155,14 +160,84 @@ i{
 
     box-shadow: 0 0 128px rgba(0,0,0,0.1),
             0 32px 64px -48px rgb(0,0,0,0.5);
+
+    text-align: center;
+    padding: 2rem 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation: GoIn 1.5s  ;
 }
+.robot{
+  background-color: rgb(249, 249, 243);
+  grid-column: 3/11;
+  grid-row: 10/13;
 
+  box-shadow: 0 0 128px rgba(0,0,0,0.1),
+            0 32px 64px -48px rgb(0,0,0,0.5);
 
+  text-align: center;
+  padding: 2rem 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation:  GoIn2 linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 400px;
+}
+.ai input{
+  border: none;
+  padding: 10px 20px;
+  width: 300px;
+  border-radius: 20px;
+  outline: none;
+  font-size: 16px;
+  box-shadow: 0 0 128px rgba(0,0,0,0.1),
+              0 32px 64px -48px rgb(0,0,0,0.5);
+}
+.ai button{
+  outline: none;
+  border: none;
+  background-color: #1d3557;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+}
+.email{
+  background-color: rgb(249, 249, 243);
+  grid-column: 3/11;
+  grid-row: 13/15;
+
+  box-shadow: 0 0 128px rgba(0,0,0,0.1),
+            0 32px 64px -48px rgb(0,0,0,0.5);
+
+  text-align: center;
+  padding: 2rem 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  animation:  GoIn2 linear;
+  animation-timeline: view();
+  animation-range-start: cover;
+  animation-range-end: 400px;
+}
 /*footer*/
 .footer{
     background-color: rgb(247, 211, 114);
     grid-column: 1/13;
-    grid-row: 42/46;
+    grid-row: 16/20;
   
     display: flex;
     justify-content: center;
@@ -219,6 +294,7 @@ i{
     margin: 0 10px;
     cursor: pointer;
     transition: all 0.2s ease;
+    color: black;
   }
   .soc_med i:hover{
     transform: translateY(-5px);
@@ -259,4 +335,54 @@ i{
     color: white;
     font-size: 15px;
     font-weight: 500;
+  }
+
+
+  @keyframes GoIn{
+    0% {
+      transform: translateX(-100%);
+      filter: blur(5px);
+    }
+    25% {
+      transform: translateX(10%);
+    }
+    50% {
+      transform: translateX(-3%);
+    }
+    75% {
+      transform: translateX(1%);
+    }
+    100% {
+      transform: translateX(0%);
+      filter: blur(0px);
+    }
+  }
+  @keyframes GoIn1{
+    0% {
+      transform: translateX(100%);
+      filter: blur(5px);
+    }
+    25% {
+      transform: translateX(-4%);
+    }
+    50% {
+      transform: translateX(3%);
+    }
+    75% {
+      transform: translateX(-1%);
+    }
+    100% {
+      transform: translateX(0%);
+      filter: blur(0px);
+    }
+  }
+  @keyframes GoIn2{
+    from{
+      scale: .8;
+      opacity: 0;
+    }
+    to{
+      scale: 1;
+      opacity: 1;
+    }
   }
