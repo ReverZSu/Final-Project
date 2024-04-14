@@ -217,7 +217,10 @@ body {
     margin: 0 10px;
     cursor: pointer;
     transition: all 0.2s ease;
+<<<<<<< Updated upstream
     color: black;
+=======
+>>>>>>> Stashed changes
   }
   .soc_med i:hover{
     transform: translateY(-5px);
