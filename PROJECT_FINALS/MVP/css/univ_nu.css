@@ -89,15 +89,13 @@ body {
 }
 
 .picture {
-    background-image: url(../assets/home/admu-build.jpg
-    );
+    background-image: url(../assets/home/nu-build.jpg);
     grid-row: 2/7;
     grid-column: 1/13;
     background-repeat: no-repeat;
     background-size: cover;
 
     filter: brightness(60%);
-    /*animation: pic_eng 5s infinite;*/
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -108,6 +106,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #f09c0c;
+   
 }
 
 .text {
@@ -182,7 +181,7 @@ body {
 }
 /*--FACILITIES--*/
 .text_2 {
-    background-color: #1C3F94;
+    background-color:#35408e;
     color: white;
  
     grid-column: 2/12;
@@ -210,7 +209,7 @@ body {
 }
 /*--BUILDING--*/
 .picture2 {
-    background-image: url(../assets/univ/ATENEO/build.jpg);
+    background-image: url(../assets/univ/NU/BUILD.jpg);
     grid-column: 2/7;
     grid-row: 9/12;
     background-repeat: no-repeat;
@@ -227,21 +226,20 @@ body {
 
 
 .pic2_text {
-    color: #1C3F94;
+    color: #4e5cc5;
     grid-column: 7/12;
     grid-row: 9/12;
     font-size: 20px;
     padding: 0 2rem;
     text-align: justify;
 }
-
 .pic2_text p{
-  color: #000000;
+  color: black;
 }
 
 /*--LIBRARY--*/
 .picture3 {
-    background-image: url(../assets/univ/ATENEO/lig.jpg);
+    background-image: url(../assets/univ/NU/lib.jpg);
     grid-column: 7/12;
     grid-row: 12/15;
     background-repeat: no-repeat;
@@ -258,7 +256,7 @@ body {
 
 
 .pic3_text {
-    color: #1C3F94;
+    color: #4e5cc5;
     grid-column: 2/7;
     grid-row: 12/15;
     font-size: 20px;
@@ -278,8 +276,8 @@ body {
     text-align: justify;
 }
 /*--GYM--*/
-.picture4 {
-    background-image: url(../assets/univ/ATENEO/sport.png);
+.picture4 { 
+    background-image: url(../assets/univ/NU/gym.jpg);
     grid-column: 2/7;
     grid-row: 15/18;
     background-repeat: no-repeat;
@@ -294,7 +292,7 @@ body {
 }
 
 .pic4_text {
-    color: #1C3F94;
+    color: #4e5cc5;
     grid-column: 7/12;
     grid-row: 15/18;
     font-size: 20px;
@@ -323,7 +321,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
   
-    background-color: #052b52;
+    background-color: #4e5cc5;
     border-radius: 20px;
     color: white;
   
@@ -365,7 +363,7 @@ body {
 
 /*--COLLEGES--*/
 .content_4{
-    background-color: #1C3F94;
+    background-color:#35408e;
     grid-row: 21/23 ;
     grid-column: 2/12;
     display: flex;
@@ -514,7 +512,8 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 5px;
-    background-color: #052b52;
+    background-color: #4e5cc5;
+
     border-radius: 20px;
   
     box-shadow: 0 0 128px rgba(0,0,0,0.1),
