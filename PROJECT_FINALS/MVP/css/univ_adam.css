@@ -597,7 +597,7 @@ body {
   .footer{
     background-color: rgb(247, 211, 114);
     grid-column: 1/13;
-    grid-row: 20/25   ;
+    grid-row: 5/9   ;
   
     display: flex;
     justify-content: center;

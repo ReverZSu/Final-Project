@@ -226,12 +226,15 @@ body {
 
 
 .pic2_text {
-    color: #1d3557;
+    color: #006836;
     grid-column: 7/12;
     grid-row: 9/12;
     font-size: 20px;
     padding: 0 2rem;
     text-align: justify;
+}
+.pic2_text p{
+  color: black;
 }
 
 /*--LIBRARY--*/
@@ -253,7 +256,7 @@ body {
 
 
 .pic3_text {
-    color: #1d3557;
+    color: #006836 ;
     grid-column: 2/7;
     grid-row: 12/15;
     font-size: 20px;
@@ -289,7 +292,7 @@ body {
 }
 
 .pic4_text {
-    color: #1d3557;
+    color: #006836;
     grid-column: 7/12;
     grid-row: 15/18;
     font-size: 20px;
@@ -318,7 +321,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
   
-    background-color: #006836;
+    background-color: #008b48;
     border-radius: 20px;
     color: white;
   
@@ -509,7 +512,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 5px;
-    background-color: #006836;
+    background-color: #008b48;
     border-radius: 20px;
   
     box-shadow: 0 0 128px rgba(0,0,0,0.1),
