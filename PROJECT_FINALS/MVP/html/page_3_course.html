@@ -32,10 +32,10 @@
             <input type="search" class="search_box" placeholder="Search..">
         </div>
         <div class="side-bar">
-            <div class="side-menu">
+            <div class="side-menu" id="pageSelector">
                 <h1 class="w3-bar-item">Courses</h1>
-                <a onclick="showContent('c1')">ARCHITECTURE</a><br>
-                <a onclick="showContent('c2')">AGRICULTURE</a><br>
+                <a onclick="showContent('c1')" value="course_1">ARCHITECTURE</a><br>
+                <a onclick="showContent('c2')" value="course_2">AGRICULTURE</a><br>
                 <a onclick="showContent('c3')">BUSINESS</a><br>
                 <a onclick="showContent('c4')">EDUCATION</a><br>
                 <a onclick="showContent('c5')">ENGINEERING</a><br>
@@ -64,11 +64,11 @@
                 
             </div>
         </div>
-        <div class="body_content" style="display: none;">
+        <div class="body_content"  style="display: none;">
 
             <!----course 1-->
-            <div id="c1">
-                <h1>ARCHITECTURE</h1>
+            <div id="c1" style="background-color: green; display: flex;">
+                <h1 style="color: pink; ">ARCHITECTURE</h1>
                 <div class="body_1">
                     asd123
                 </div>
@@ -76,6 +76,9 @@
 
             <!----course 2-->
             <div id="c2" >
+                <div class="body_1">
+                    asd123
+                </div>
                 compscri
             </div>
 
@@ -145,6 +148,10 @@
         var bodyContentDiv = document.querySelector('.body_content');
         bodyContentDiv.style.display = 'block';
     }
+
+    </script>
+</body>
+</html>
 </script>
 </body>
 </html>
