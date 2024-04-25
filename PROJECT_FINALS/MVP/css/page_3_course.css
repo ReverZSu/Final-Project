@@ -109,17 +109,20 @@ color: #1d3557;
 text-transform:lowercase;
 transition: all 0.2s;
 border-radius: 20px;
+transform: scale(1.0);
+transition: all 0.3s ease-in-out;
 }
 .side-menu a:hover{
-background-color: #ffef79;
-
+background-color: #fcf1b1;
+transform: scale(1.05);
 }
 
 .body_content{
-background-color: rgb(255, 228, 192);
+background-color: #fff6c4;
+box-shadow: inset 0 0 20px rgba(110, 110, 110, 0.064);
 grid-column: 4/13;
 grid-row: 2/12;
-
+border-radius: 20px;
 display: flex;
 justify-content: center;
 }
@@ -157,12 +160,8 @@ justify-content: space-evenly;
 .body_a_1{
 text-align: center;
 }
-.c1{
-  background: #030445;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.body_content .c1{
+  padding: 2rem;
 }
 
 /* footer */
