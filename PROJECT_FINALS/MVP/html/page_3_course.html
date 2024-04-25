@@ -31,73 +31,57 @@
             <a href="../html/page_6_contact.html">Contacts</a>
             <input type="search" class="search_box" placeholder="Search..">
         </div>
-
-        <div class="course">
-            <h1>COURSES</h1>
+        <div class="side-bar">
+            <div class="side-menu">
+                <h1 class="w3-bar-item">Courses</h1>
+                <a onclick="showContent('c1')">ARCHITECTURE</a><br>
+                <a onclick="showContent('c2')">AGRICULTURE</a><br>
+                <a onclick="showContent('c3')">BUSINESS</a><br>
+                <a onclick="showContent('c4')">EDUCATION</a><br>
+                <a onclick="showContent('c5')">ENGINEERING</a><br>
+                <a onclick="showContent('c6')">FORMAL SCIENCES</a><br>
+                <a onclick="showContent('c7')">HEALTH SCIENCES</a><br>
+                <a onclick="showContent('c8')">HUMANITIES</a><br>
+                <a onclick="showContent('c9')">MEDIA AND COMMUNICATION</a><br>
+                <a onclick="showContent('c10')">NUTRITION</a><br>
+                <a onclick="showContent('c11')">SOCIAL SCIENCES</a><br>
+                <a onclick="showContent('c12')">TRANSPORTATION</a><br>
+            </div>
         </div>
 
+        <div class="body_content_show">
+            <div class="body_a">
+                <div class="body_a_1">
+                <h1>Welcome to <br><font style="color:rgb(216, 173, 3); font-size: 80px;">Course Section</font> </h1>
+                <p>The course section offers a diverse array of academic disciplines, ranging from architecture and agriculture to business and health sciences. Each course is meticulously curated to provide comprehensive knowledge and skill development opportunities for students seeking to explore their interests and pursue their academic and professional goals.</p>
+                <div class="body_a_2">
+                    <img src="../assets/archi/aa.jpg">
+                    <img src="../assets/eng/eng2.jpg">
+                    <img src="../assets/eng/eng4.jpg">
+                </div> 
 
-    
-        <div class="cc1"onclick="window.location.href = 'archi_course.html';">
-            <div class="text">
-               <h1>ARCHITECTURE</h1> 
+            </div>
+                
+            </div>
         </div>
+        <div class="body_content" style="display: none;">
+
+            <!----course 1-->
+            <div id="c1">
+                <h1>ARCHITECTURE</h1>
+                <div class="body_1">
+                    asd123
+                </div>
+            </div>
+
+            <!----course 2-->
+            <div id="c2" >
+                compscri
+            </div>
+
         </div>
-         <div class="cc2">
-            <div class="text">
-               <h1>AGRICULTURE</h1> 
-         </div>
-         </div>
-         <div class="cc3">
-            <div class="text">
-               <h1>BUSINESS</h1> 
-        </div>
-        </div>
-        <div class="cc4">
-            <div class="text">
-               <h1>EDUCATION</h1> 
-        </div>
-        </div>
-        <div class="cc5"onclick="window.location.href = 'eng_course.html';">
-            <div class="text">
-               <h1>ENGINEERING</h1> 
-        </div>
-        </div>
-        <div class="cc6">
-            <div class="text">
-               <h1>FORMAL SCIENCES</h1> 
-        </div>
-        </div>
-        <div class="cc7">
-            <div class="text">
-               <h1>HEALTH SCIENCES</h1> 
-        </div>
-        </div>
-        <div class="cc8">
-            <div class="text">
-               <h1>HUMANITIES</h1> 
-        </div>
-        </div>
-        <div class="cc9">
-            <div class="text">
-               <h1>MEDIA AND COMMUNICATION</h1> 
-        </div>
-        </div>
-        <div class="cc10">
-            <div class="text">
-               <h1>NUTRITION</h1> 
-        </div>
-        </div>
-        <div class="cc11">
-            <div class="text">
-               <h1>SOCIAL SCIENCES</h1> 
-        </div>
-        </div>
-        <div class="cc12">
-            <div class="text">
-               <h1>TRANSPORTATION</h1> 
-        </div>
-        </div>
+
+        <!---footer-->
         <div class="footer">
             <div class="footer_1">
                 <div class="footer_holder">
@@ -138,12 +122,30 @@
             </div>
         </div>
     </div>
-
-
-
-
-
 </div>
+<script>
+    function showContent(courseId) {
+        // Hide all content divs
+        var contentDivs = document.querySelectorAll('.body_content div');
+        for (var i = 0; i < contentDivs.length; i++) {
+            contentDivs[i].style.display = 'none';
+        }
+        
+        // Show the selected content div and its child div with class body_1
+        var selectedDiv = document.getElementById(courseId);
+        if (selectedDiv) {
+            selectedDiv.style.display = 'block';
+            var body1Div = selectedDiv.querySelector('.body_1');
+            if (body1Div) {
+                body1Div.style.display = 'block';
+            }
+        }
+        
+        // Show the body_content div
+        var bodyContentDiv = document.querySelector('.body_content');
+        bodyContentDiv.style.display = 'block';
+    }
+</script>
 </body>
 </html>
 
