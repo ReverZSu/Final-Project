@@ -91,24 +91,24 @@ color: #f09c0c;
 }
 .side-menu{
 text-align: left;
-width: 90%;
+width: 70%;
 
 }
 .side-menu a{
+  padding-left: 25px;
+letter-spacing: 1px;
 text-decoration: none;
 display: block;
 height: 50px;
-
 display: flex;
-justify-content:center;
-align-items: center;
 
+align-items: center;
 font-weight: 500;
 font-size: 18px;
 color: #1d3557;
-text-transform:lowercase;
+
 transition: all 0.2s;
-border-radius: 20px;
+border-radius: 5px;
 transform: scale(1.0);
 transition: all 0.3s ease-in-out;
 }
