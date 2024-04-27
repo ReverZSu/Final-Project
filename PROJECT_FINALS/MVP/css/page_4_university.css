@@ -233,6 +233,7 @@ body {
     align-items: center;
     font-size: 40px;
     color: aliceblue;
+   
 }
 .f1{
     background-image: url(../assets/univ/ADAMSON/adamson.jpg);
@@ -303,29 +304,34 @@ body {
     justify-content: center;
     font-size: 40px;
     color: aliceblue;
+    margin-top: 10px;
 }
 .c1{
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)), url(../assets/home/arch.jpg);
     grid-row: 23/27;
     grid-column: 1/5;
-    background-color: aquamarine;
+    margin-top: 10px;
     display: flex;
     align-items:end;
     line-height: 0px;
     color: white;
 }
+
 .c2{
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)), url(../assets/univ/ADAMSON/phar.jpg);
     grid-row: 23/27;
     grid-column: 5/9;
-    background-color: rgb(23, 6, 104);
+    margin-top: 10px;
     display: flex;
     align-items:end;
     line-height: 0px;
     color: white;
 }
 .c3{
+    background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)), url(../assets/univ/ADAMSON/bio.jpg);
     grid-row: 23/27;
     grid-column: 9/13;
-    background-color: rgb(178, 204, 31);
+    margin-top: 10px;
     display: flex;
     align-items:end;
     line-height: 0px;
@@ -346,4 +352,213 @@ body {
 }
 .c1_a{
     background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692));
+    padding: 2rem;
+    
 }
+.more_1{
+    grid-row: 27/28;
+    grid-column: 6/8;
+
+    background-color: rgb(13, 0, 89);
+    border: none;
+    outline: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+}
+
+.scho{
+    grid-row: 28/29;
+    grid-column: 1/13;
+    background-color: rgb(13, 0, 89) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: aliceblue;
+    margin-top: 10px;
+}
+
+
+.s1{
+    background-color: #fef1db;
+    grid-row: 29/34;
+    grid-column: 1/13;
+
+}
+.s1_a{
+    color: black;
+    grid-row: 29/32;
+    grid-column: 1/8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    text-align: justify;
+    line-height: 25px;
+    background-color: #fef1db;
+}
+.s1_pic{
+ background-image: url(../assets/home/adam.png);
+ grid-row: 29/33;
+ grid-column: 8/12;
+ background-repeat: no-repeat;
+ background-size: 80%;
+background-position: center;
+margin-top: 10px;
+}
+.more_2{
+    grid-row: 32/33;
+    grid-column: 2/4;
+    margin-top: 10%;
+    background-color: rgb(13, 0, 89);
+    border: none;
+    outline: none;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background-color: rgb(247, 211, 114);
+    grid-column: 1/13;
+    grid-row: 50/55;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer_1{
+    width: 80%;
+    height: 80%;
+    
+  }
+  
+  .footer_holder{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .footer_nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    
+    color: #1d3557;
+  }
+  .footer_nav p{
+    transition: transform 0.2s ease;
+  }
+  .footer_nav p:hover{
+    transform: translateX(10px);
+    color: #51719b;
+  }
+  .footer_logo img{
+    width: 80px;
+  }
+  .footer_logo{
+    text-transform: uppercase;
+  }
+  
+  hr{
+    background-color: rgb(253, 174, 3);
+    height: 3px;
+    border: none;
+    margin-bottom: 40px;
+  }
+  .soc_med{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    font-size: 40px;
+  }
+  .soc_med i{
+    margin: 0 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  .soc_med i:hover{
+    transform: translateY(-5px);
+  }
+  .credit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .basta{
+    display: flex;
+    justify-content: space-between;
+    
+    width: 50%;
+  }
+  
+  .bot{
+    color: #1d3557;
+  }
+  .bot input{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    outline: none;
+    font-size: 16px;
+  }
+  .bot button{
+    outline: none;
+    border: none;
+    background-color: #1d3557;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+  
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+  }
