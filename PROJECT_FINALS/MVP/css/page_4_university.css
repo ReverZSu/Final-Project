@@ -217,6 +217,9 @@ body {
 #u2{
     background-image: url(../assets/home/admu-build.jpg);
 }
+#u3{
+    background-image: url(../assets/home/dlsu-build.jpg);
+}
 .u1_b{
     display: flex;
     align-items: center;
