@@ -96,17 +96,7 @@ body {
     background-size: cover;
 
     filter: brightness(60%);
-    /*animation: pic_eng 5s infinite;*/
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-
-    box-shadow: inset 2px 2px 20px rgba(6, 5, 5, 0.979);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #f09c0c;
+ 
 }
 
 .text {
