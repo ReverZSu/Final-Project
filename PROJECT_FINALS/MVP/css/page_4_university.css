@@ -183,7 +183,7 @@ body {
 .university{
     background-color: rgb(255, 253, 238);
     grid-column: 2/12;
-    grid-row: 8/40;
+    grid-row: 8/38;
 
     display: grid;
     grid-template-columns: repeat(12,1fr);
