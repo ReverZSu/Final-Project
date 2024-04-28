@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Opportunity</title>
+    <link rel = "icon" href ="../assets/common/logo.png" type = "image/x.icon">
+    <link rel="stylesheet" href="../css/page_1_login.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="container_picture" id="picture">
+        </div>
+        <div class="container_login">
+            <div class="wrapper">
+                <form action="">
+                    <img src="../assets/common/logo.png">
+                    <h1>Welcome to OPPORTUNITY</h1>
+                    <p>Secure Your Future on the Right Path</p>
+
+                  
+
+                    <button type="submit" class="btn">Explore Now</button>
+
+                   
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+
+
+    <script>
+        //soon iibahin nyo to dahil required mag lagay ng username and password. for now ganto muna para ma redirect ka sa home page
+        document.getElementsByClassName('btn')[0].addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent form submission
+            window.location.href = 'page_2_home.html';
+        });
+        </script>
+        
+        
+</body>
+</html>
