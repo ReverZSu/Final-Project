@@ -1045,29 +1045,39 @@
     </div>
     </div>
     <script>
-        function showContent(courseId) {
-            // Hide all content divs
-            var contentDivs = document.querySelectorAll('.body_content div');
-            for (var i = 0; i < contentDivs.length; i++) {
-                contentDivs[i].style.display = 'none';
-            }
+        document.addEventListener('DOMContentLoaded', function () {
+    // Extract course identifier from the URL
+    var urlParams = new URLSearchParams(window.location.search);
+    var courseId = urlParams.get('course');
 
-            // Show the selected content div and its child div with class body_1
-            var selectedDiv = document.getElementById(courseId);
-            if (selectedDiv) {
-                selectedDiv.style.display = 'block';
-                var body1Div = selectedDiv.querySelector('.body_1');
-                if (body1Div) {
-                    body1Div.style.display = 'block';
-                }
-            }
+    // If courseId is not null and matches a valid course ID, show the corresponding content
+    if (courseId) {
+        showContent(courseId);
+    }
+});
 
-            // Show the body_content div
-            var bodyContentDiv = document.querySelector('.body_content');
-            bodyContentDiv.style.display = 'block';
+function showContent(courseId) {
+    // Hide all content divs
+    var contentDivs = document.querySelectorAll('.body_content div');
+    for (var i = 0; i < contentDivs.length; i++) {
+        contentDivs[i].style.display = 'none';
+    }
+
+    // Show the selected content div and its child div with class body_1
+    var selectedDiv = document.getElementById(courseId);
+    if (selectedDiv) {
+        selectedDiv.style.display = 'block';
+        var body1Div = selectedDiv.querySelector('.body_1');
+        if (body1Div) {
+            body1Div.style.display = 'block';
         }
+    }
+
+    // Show the body_content div
+    var bodyContentDiv = document.querySelector('.body_content');
+    bodyContentDiv.style.display = 'block';
+}
 
     </script>
 </body>
-
 </html>
