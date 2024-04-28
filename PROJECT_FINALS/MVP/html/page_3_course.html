@@ -16,6 +16,24 @@
 </head>
 
 <body>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "CHAT WITH OPPORTUNITY CHATBOT",
+      "botConversationDescription": "Your Digital Companion for Every Conversation",
+      "botId": "a6d306d0-a797-438c-b156-be1e53c3eae3",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "a6d306d0-a797-438c-b156-be1e53c3eae3",
+      "webhookId": "e3dbbd8c-5988-48a2-88d2-64bb1062898a",
+      "lazySocket": true,
+      "themeName": "prism",
+      "frontendVersion": "v1",
+      "showPoweredBy": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
     <div class="container">
         <div class="header">
             <a href="/PROJECT_FINALS/MVP/html/page_2_home.html">
@@ -34,7 +52,7 @@
         <div class="side-bar">
             <div class="side-menu" id="pageSelector">
                 <h1 class="w3-bar-item">Colleges</h1>
-                <a onclick="showContent('c1')" href="#c1"><i class="fa-regular fa-building"></i> &nbsp;&nbsp;&nbsp;Architecture</a><br>
+                <a onclick="showContent('c1')"  onclick="toggleVisibility('c5')" href="#c1"><i class="fa-regular fa-building"></i> &nbsp;&nbsp;&nbsp;Architecture</a><br>
                 <a onclick="showContent('c2')" href="#c2"><i class="fa-solid fa-leaf"></i> &nbsp;&nbsp;Agriculture</a><br>
                 <a onclick="showContent('c3')" href="#c3"><i class="fa-solid fa-briefcase"></i>&nbsp; Business</a><br>
                 <a onclick="showContent('c4')" href="#c4"><i class="fa-solid fa-book-open"></i>  &nbsp;&nbsp;Education</a><br>
@@ -1050,10 +1068,6 @@
         }
 
     </script>
-</body>
-
-</html>
-</script>
 </body>
 
 </html>

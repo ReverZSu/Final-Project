@@ -183,7 +183,7 @@ body {
 .university{
     background-color: rgb(255, 253, 238);
     grid-column: 2/12;
-    grid-row: 10/40;
+    grid-row: 8/40;
 
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -219,6 +219,33 @@ body {
 }
 #u3{
     background-image: url(../assets/home/dlsu-build.jpg);
+}
+#u4{
+    background-image: url(../assets/home/feu-build.jpg);
+}
+#u5{
+    background-image: url(../assets/home/lup-build.jpg);
+}
+#u6{
+    background-image: url(../assets/home/mapua-build.jpg);
+}
+#u7{
+    background-image: url(../assets/home/nu-build.jpg);
+}
+#u8{
+    background-image: url(../assets/home/pup-build.jpg);
+}
+#u9{
+    background-image: url(../assets/home/sb-build.jpg);
+}
+#u10{
+    background-image: url(../assets/home/ue-build.jpg);
+}
+#u11{
+    background-image: url(../assets/home/up-build.jpg);
+}
+#u12{
+    background-image: url(../assets/home/ust-build.jpg);
 }
 .u1_b{
     display: flex;

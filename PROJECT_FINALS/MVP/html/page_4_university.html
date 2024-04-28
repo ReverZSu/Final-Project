@@ -16,6 +16,25 @@
 </head>
 
 <body>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+<script>
+  window.botpressWebChat.init({
+      "composerPlaceholder": "CHAT WITH OPPORTUNITY CHATBOT",
+      "botConversationDescription": "Your Digital Companion for Every Conversation",
+      "botId": "a6d306d0-a797-438c-b156-be1e53c3eae3",
+      "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
+      "messagingUrl": "https://messaging.botpress.cloud",
+      "clientId": "a6d306d0-a797-438c-b156-be1e53c3eae3",
+      "webhookId": "e3dbbd8c-5988-48a2-88d2-64bb1062898a",
+      "lazySocket": true,
+      "themeName": "prism",
+      "frontendVersion": "v1",
+      "showPoweredBy": true,
+      "theme": "prism",
+      "themeColor": "#2563eb"
+  });
+</script>
+
     <div class="container">
         <div class="header">
             <a href="/PROJECT_FINALS/MVP/html/page_2_home.html">
@@ -278,7 +297,7 @@
                         is a prominent private educational institution known for its comprehensive
                         engineering, science, and technology programs.
                     </p>
-                    <button onclick="myFunction()" class="buttonn">Apply Now</button>
+                    <button onclick="window.location.href = 'https://www.adamson.edu.ph/cfe/?page=apply&cat=col'" class="buttonn">Apply Now</button>
                 </div>
             </div>
             <div class="facility">
@@ -363,7 +382,7 @@
                 </div>
             </div>
             <div class="more_1">
-                <button onclick="myFunction()" class="buttonn">Learn More</button>
+                <button onclick="window.location.href = 'https://www.adamson.edu.ph/v1/?page=school-fee'" class="buttonn">Apply Now</button>
             </div>
            
 
@@ -383,14 +402,13 @@
                         ensuring that deserving individuals have access to quality education.</p>
             </div>
             <div class="more_2">
-                <button onclick="myFunction()" class="buttonn">Learn More</button>
+                <button onclick="window.location.href = 'https://www.adamson.edu.ph/v1/?page=academic-scholarship-program'" class="buttonn">Apply Now</button>
             </div>
             <div class="s1_pic">
 
             </div>
                 `;
             } else if (itemId === 'uni2') {
-                // Update content for uni2
                 universityContent.innerHTML = `
                 <div id="u2" ></div>
                 <div class="u1_b">
@@ -403,7 +421,7 @@
                             Ateneo de Manila University stands out as a premier educational institution in the Philippines,
                             renowned for its commitment to forming leaders who strive for excellence and serve the greater good.
                         </p>
-                        <button onclick="myFunction()" class="buttonn">Apply Now</button>
+                        <button onclick="window.location.href = 'https://admu-acet.edukasyon.ph/'" class="buttonn">Apply Now</button>
                     </div>
                 </div>
                 <div class="facility">
@@ -476,7 +494,7 @@
                     </div>
                 </div>
                 <div class="more_1">
-                    <button onclick="myFunction()" class="buttonn">Learn More</button>
+                    <button onclick="window.location.href = 'https://www.ateneo.edu/college/academics/degrees-majors'" class="buttonn">Learn More</button>
                 </div>
             
 
@@ -495,9 +513,213 @@
 
                 </div>
                 `;
-            }
-            else if (itemId === 'uni3') {
+            }else if (itemId === 'uni3') {
                 // Update content for uni3
+                universityContent.innerHTML = `
+                <div id="u3" ></div>
+                <div class="u1_b">
+                    <div>
+                        <h2>3</h2>
+                        <!---School Name-->
+                        <h1 style="color:#087830;">DE LA SALLE UNIVERSITY</h1>
+                        <!---overview-->
+                        <p>
+                            DLSU offers a diverse range of undergraduate, graduate, and postgraduate
+                             programs across various disciplines, emphasizing research, innovation, and academic excellence. 
+                        </p>
+                        <button onclick="window.location.href = 'https://admissions.dlsu.edu.ph/ug/application/adm_welcome.aspx'" style="background-color:#009900;" class="buttonn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="facility" style="background-color:#087830;">
+                    <h1>FACILITITES</h1>
+                </div>
+                <div class="f1"  style="background-image: url(../assets/univ/DLSU/building.jpg) ;">
+                    <!----image-->
+                </div>
+                <div class="f2">
+                    <div>
+                        <h1>De La Salle Building</h1>
+                        <p>
+                            De La Salle University's architectural marvel stands as a testament to its commitment to academic 
+                            excellence and innovation. The main building, with its imposing structure and modern design, commands
+                             attention amidst the bustling cityscape of Manila. Stepping inside, students and faculty are greeted 
+                             by a blend of contemporary aesthetics and functional spaces, where classrooms, laboratories, and collaborative
+                              areas converge to foster a dynamic learning environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div>
+                    <h1>Library</h1>
+                    <p>
+                        The De La Salle University Library stands as a beacon of knowledge and intellectual inquiry within the university's
+                         vibrant academic community. Housing a vast collection of books, journals, and digital resources spanning various disciplines,
+                          the library serves as a hub for research, study, and exploration. From quiet reading areas to group study rooms and multimedia
+                           labs, the library offers a diverse range of spaces tailored to the needs of students and scholars.
+                    </p>
+                    </div>
+                </div>
+                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/DLSU/lib.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/DLSU/gym.png) ;">
+                    <!----image-->
+                </div>
+                <div class="f6">
+                    <div>
+                        <h1>Gym</h1>
+                        <p>
+                            The De La Salle University gymnasium embodies the university's commitment to holistic 
+                            development and wellness. Equipped with modern fitness equipment, courts for basketball, 
+                            volleyball, and other sports, as well as spaces for group exercise classes and training sessions, 
+                            the gym provides students with opportunities to stay active and healthy. Beyond physical fitness, 
+                            the gym also serves as a venue for sports events, intramural leagues, and recreational activities,
+                             fostering a sense of community and camaraderie among students.
+                        </p>
+                    </div>
+                </div>
+                <div class="h_course"style="background-color:#087830;">
+                    <h1>TOP COURSES</h1>
+                </div>
+                
+                <div class="c1">
+                
+                    <div class="c1_a">
+                        <h1>BS in Business</h1>
+                        <p>Wthe Business Management program aims to prepare individuals to be competent business professionals by honing their analytical, ethical, and critical thinking skills.</p>
+                    </div>
+                </div>
+                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/account.jpg);">
+                    <div class="c1_a">
+                        <h1>BS in Accountancy </h1>
+                        <p>Accountancy is focused on shaping its students to work  in accounting and other related fields. This program develops one’s competence and integrity with its subjects ranging from Business Communication, Specialized Accounting and Finance classes, Law, and even International Business and Trade</p>
+                    </div>
+                </div>
+                <div class="c3">
+                    <div class="c1_a">
+                        <h1>BS in Chemistry</h1>
+                        <p>A Bachelor of Science in Chemistry program provides students with a comprehensive understanding of the fundamental principles and applications of chemistry. Typically spanning four years, this undergraduate degree offers a blend of theoretical knowledge and practical laboratory experience. </p>
+                    </div>
+                </div>
+                <div class="more_1"style="background-color:#087830;">
+                    <button onclick="window.location.href = 'https://www.dlsu.edu.ph/offices/registrar/academic-programs//'" class="buttonn"style="background-color:#087830;">Learn More</button>
+                </div>
+            
+
+                <div class="s1">
+                </div>
+                <div class="scho"style="background-color:#087830;">
+                    <h1>SCHOLARSHIP</h1>
+                </div>
+                <div class="s1_a">
+                    <p>
+De La Salle University (DLSU) offers a range of scholarship opportunities to support deserving students in their academic pursuits. These scholarships aim to recognize and reward excellence, leadership, and service among incoming and current students. DLSU's scholarship programs encompass various criteria, including academic achievement, leadership potential, artistic talent, and financial need. The university administers scholarships such as the University Scholarship, the St. La Salle Scholarship, the Brother President Scholarship, the Vaugirard Scholarship, and many others.</p>
+                </div>
+                <div class="more_2"style="background-color:#087830;">
+                    <button onclick="window.location.href = 'https://www.dlsu.edu.ph/admissions/scholarships/'" style="background-color:#087830;" class="buttonn">Learn More</button>
+                </div>
+                <div class="s1_pic" style="background-image: url(../assets/home/dlsu.png);">
+
+                </div>
+                `;
+            } else if (itemId === 'uni4') {
+                universityContent.innerHTML = `
+                <div id="u4" ></div>
+                <div class="u1_b">
+                    <div>
+                        <h2>4</h2>
+                        <!---School Name-->
+                        <h1 style="color:#009900;">FAR EASTERN UNIVERSITY</h1>
+                        <!---overview-->
+                        <p>
+                            Far Eastern University (FEU) in Manila, Philippines, is a renowned private university known for its rich history and commitment to quality education. Founded in 1928, FEU boasts a distinctive Art Deco architecture across its campus, symbolizing its tradition and modernity. 
+                        </p>
+                        <button onclick="window.location.href = 'https://www.feu.edu.ph/admissions/freshmen-application/'" style="background-color:#009900;" class="buttonn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="facility" style="background-color:#009900;">
+                    <h1>FACILITITES</h1>
+                </div>
+                <div class="f1"  style="background-image: url(../assets/univ/FEU/build.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f2">
+                    <div>
+                        <h1>Far Eastern Building</h1>
+                        <p>
+                            Far Eastern University (FEU) boasts an architectural marvel that stands as a testament to its rich history and enduring legacy in the heart of Manila. The iconic Art Deco-inspired main building, with its majestic clock tower and intricate facade, captures the essence of the university's commitment to excellence in education and cultural heritage. Stepping into its halls, students are greeted by a blend of tradition and modernity, where historic architecture merges seamlessly with state-of-the-art facilities to create a vibrant learning environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div>
+                    <h1>Library</h1>
+                    <p>
+                        FEU's library serves as a sanctuary of knowledge and intellectual exploration, offering students and faculty access to a vast array of resources and research materials. With its extensive collection of books, journals, and digital archives, the library provides a wealth of information spanning various disciplines and areas of study. From quiet reading corners to collaborative workspaces and computer labs, it offers a conducive environment for scholarly pursuits and academic inquiry.
+                    </p>
+                    </div>
+                </div>
+                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/FEU/lib.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/FEU/gym.jpg) ;">
+                    <!----image-->
+                </div>
+                <div class="f6">
+                    <div>
+                        <h1>Gym</h1>
+                        <p>
+                            The gymnasium at Far Eastern University is a hub of athletic activity and physical fitness, where students can engage in a wide range of sports and recreational pursuits. Equipped with modern facilities, including basketball courts, indoor tracks, and fitness centers, the gym provides ample opportunities for students to stay active and healthy. Whether participating in intramural sports leagues, attending fitness classes, or simply enjoying a workout with friends, the gym fosters a sense of community and camaraderie among students.
+                        </p>
+                    </div>
+                </div>
+                <div class="h_course" style="background-color:#009900;">
+                    <h1>TOP COURSES</h1>
+                </div>
+                
+                <div class="c1"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/business.jpg);">
+                
+                    <div class="c1_a">
+                        <h1>BS Business  </h1><br>
+                        <h1> Administration</h1>
+                        <p>By capitalizing on education and technology, the program aims to provide students with knowledge and skills that meet industry demands. It has a flexible and comprehensive curriculum where students are free to choose which area of expertise to focus on. </p>
+                    </div>
+                </div>
+                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/businessad.jpg);">
+                    <div class="c1_a">
+                        <h1>BS Accountancy</h1>
+                        <p>FEU is one of the first universities in the Philippines to offer BS Accountancy, and since then, it has been perfecting this program to produce competent and morally upright accounting professionals. Their BSA program has already received a Level IV accreditation status under the Philippine Association of Colleges and Universities Commission on Accreditation (PACUCOA). </p>
+                    </div>
+                </div>
+                <div class="c3"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/medtech.jpg);">
+                    <div class="c1_a">
+                        <h1>BS Medical </h1><br>
+                        <h1> Technology</h1>
+                        <p>BS Medical Technology is a four-year program that seeks to equip students with scientific knowledge and technical competence in performing clinical laboratory procedures. Part of their curriculum are subjects like Laboratory Management, Human Histology, Clinical Bacteriology, Hematology, and Virology.</p>
+                    </div>
+                </div>
+                <div class="more_1" style="background-color:#009900;">
+                    <button onclick="window.location.href = 'https://www.feu.edu.ph/undergraduate-programs/'" style="background-color:#009900;" class="buttonn">Learn More</button>
+                </div>
+            
+
+                <div class="s1">
+                </div>
+                <div class="scho"style="background-color:#009900;">
+                    <h1>SCHOLARSHIP</h1>
+                </div>
+                <div class="s1_a">
+                    <p>
+Far Eastern University (FEU) offers a variety of scholarships and financial aid programs designed to support students in achieving their academic goals while alleviating financial burdens. These scholarships cater to different types of students, including academic achievers, athletes, artistic talents, and those in need of financial assistance. Some prominent scholarships include the Merit Scholarship, which rewards students with outstanding academic records, and the FEU President's Scholarship, which provides full tuition and miscellaneous fee coverage for exemplary students. </p>
+                </div>
+                <div class="more_2"style="background-color:#009900;">
+                    <button onclick="window.location.href = 'https://www.feu.edu.ph/cost-and-aid/scholarship-grants/'" class="buttonn"style="background-color:#009900;">Learn More</button>
+                </div>
+                <div class="s1_pic" style="background-image: url(../assets/home/feu.png);">
+
+                </div>
+                `;
+            }else if (itemId === 'uni4') {
                 universityContent.innerHTML = `
                 <div id="u3" ></div>
                 <div class="u1_b">
@@ -605,40 +827,32 @@ De La Salle University (DLSU) offers a range of scholarship opportunities to sup
 
                 </div>
                 `;
-            } else if (itemId === 'uni4') {
-                // Update content for uni2
+            } else if (itemId === 'uni5') {
                 universityContent.innerHTML = `
-                <div id="u4" ></div>
+                <div id="u5" ></div>
                 <div class="u1_b">
                     <div>
-                        <h2>4</h2>
+                        <h2>5</h2>
                         <!---School Name-->
-                        <h1 style="color:#009900;">FAR EASTERN UNIVERSITY</h1>
+                        <h1 style="color:#771717;">LYCEUM OF THE PHILIPPINES UNIVERSITY</h1>
                         <!---overview-->
                         <p>
-                            Ateneo de Manila University stands out as a premier educational institution in the Philippines,
-                            renowned for its commitment to forming leaders who strive for excellence and serve the greater good.
+                            LPU offers a wide range of undergraduate and graduate programs, including courses in the Liberal Arts, Business, Diplomacy, Communication, Engineering, and Health Sciences. Known for its strong focus on global education, LPU has established numerous linkages and partnerships with universities and institutions around the world to facilitate international exchange and enhance its educational offerings. 
                         </p>
-                        <button onclick="myFunction()" class="buttonn">Apply Now</button>
+                        <button onclick="window.location.href = 'https://manila.lpu.edu.ph/admissions/'" style="background-color:#771717;" class="buttonn">Apply Now</button>
                     </div>
                 </div>
-                <div class="facility">
+                <div class="facility" style="background-color:#771717;">
                     <h1>FACILITITES</h1>
                 </div>
-                <div class="f1"  style="background-image: url(../assets/home/feu-build.jpg);">
+                <div class="f1"  style="background-image: url(../assets/univ/LPU/build.jpg);">
                     <!----image-->
                 </div>
                 <div class="f2">
                     <div>
-                        <h1>Ateneo De Manila Building</h1>
+                        <h1>Lyceum Building</h1>
                         <p>
-                            Ateneo de Manila University's architectural landscape stands as a testament to
-                            its rich history and academic excellence. Its iconic main building, with its
-                            distinctive blue and white façade, commands attention as a beacon of learning
-                            and innovation. Stepping into its halls, one is greeted by a blend of tradition
-                            and modernity, where centuries-old wisdom converges with cutting-edge technology.
-                            From the grandeur of its chapel to the vibrant classrooms and research centers, 
-                            every corner of the campus echoes with the vibrant energy of intellectual pursuit.
+                            Lyceum of the Philippines University (LPU) boasts a striking architectural presence, characterized by its modern design and innovative facilities. The university's main building stands as a beacon of academic excellence, with its sleek lines and contemporary aesthetic reflecting LPU's commitment to cutting-edge education. Within this architectural marvel, students find classrooms equipped with the latest technology, laboratories for hands-on learning, and collaborative spaces that foster creativity and critical thinking.
                         </p>
                     </div>
                 </div>
@@ -646,68 +860,756 @@ De La Salle University (DLSU) offers a range of scholarship opportunities to sup
                     <div>
                     <h1>Library</h1>
                     <p>
-                        The Ateneo de Manila University Library stands as a bastion of knowledge and intellectual
-                        growth within the university's vibrant academic landscape. With its modern architecture 
-                        and serene ambiance, the library offers a welcoming haven for students, scholars, and researchers alike.
-                        Stepping through its doors, one is greeted by shelves adorned with a myriad of books, journals, and
-                        multimedia resources spanning various disciplines and topics.
+                        LPU's library is a sanctuary for intellectual exploration and research, housing a vast collection of resources that span various disciplines and areas of interest. From print materials to digital archives, students have access to a wealth of information that supports their academic endeavors. The library's tranquil atmosphere, combined with modern amenities and study spaces, creates an ideal environment for focused learning and scholarly inquiry.
                     </p>
                     </div>
                 </div>
-                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/ATENEO/lig.jpg);">
+                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/LPU/lib.jpg);">
                     <!----image-->
                 </div>
-                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/ATENEO/sport.png) ;">
+                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/LPU/gym.jpg) ;">
                     <!----image-->
                 </div>
                 <div class="f6">
                     <div>
                         <h1>Gym</h1>
                         <p>
-                            The Ateneo de Manila University gymnasium embodies the spirit of holistic education, promoting not only physical wellness but also fostering a sense of community and camaraderie among its students and faculty. With its modern facilities and vibrant atmosphere, the gym serves as a hub for athletic development, recreational activities, and sports events. Equipped with state-of-the-art exercise machines, courts for basketball, volleyball, and other sports, as well as dedicated spaces for fitness classes and training sessions, the gym offers a diverse range of opportunities for individuals to stay active and pursue their fitness goals.
+                            The gymnasium at Lyceum of the Philippines University is a hub of physical activity and wellness, providing students with opportunities to maintain their health and fitness while fostering a sense of camaraderie and teamwork. Equipped with state-of-the-art equipment and facilities, the gym offers a diverse range of activities, from individual workouts to team sports and group fitness classes. Whether students are honing their athletic skills, relieving stress through exercise, or simply enjoying recreational activities with friends, the gym promotes a balanced lifestyle and a positive campus culture.
                         </p>
                     </div>
                 </div>
-                <div class="h_course">
+                <div class="h_course" style="background-color:#771717;">
                     <h1>TOP COURSES</h1>
                 </div>
                 
-                <div class="c1"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/eng/eng.jpg);">
+                <div class="c1"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/business.jpg);">
                 
                     <div class="c1_a">
-                        <h1>BS in Engineering</h1>
-                        <p>Management Engineering is undoubtedly one of Ateneo’s most prestigious degree programs. The course prepares its students, through holistic education and decision science, to assume leadership roles in the workplace immediately after their graduation.</p>
+                        <h1>AB Journalism </h1>
+                        <p>By taking this program, you will learn about the principles and techniques of reporting, writing, producing, and disseminating news in a range of formats and platforms in a democratic society.  </p>
                     </div>
                 </div>
-                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/Media.jpg);">
+                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/businessad.jpg);">
                     <div class="c1_a">
-                        <h1>AB Communication</h1>
-                        <p>Ateneo’s Communication program is well-fit for students who aim to work in the media industry post-graduation.The school also gives their Communication students the right facilities and equipment for hands-on practice</p>
+                        <h1>AB Legal </h1><br>
+                        <h1>Management</h1>
+                        <p>By taking this program, you will also be equipped with knowledge in accounting, economics, business, and finance. Hence, it can also prepare you for business-related work. </p>
                     </div>
                 </div>
-                <div class="c3">
+                <div class="c3"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/medtech.jpg);">
                     <div class="c1_a">
-                        <h1>BS in Biology</h1>
-                        <p>This one’s for future scientists, researchers, and doctors! As one of Ateneo’s CHED-Accredited Center of Excellences, the Department of Biology offers BS Biology, a program that gives emphasis on biodiversity, biomedicine, microbiology, molecular biology, and bio-education. </p>
+                        <h1> BS Customs</h1><br>
+                        <h1> Administration </h1>
+                        <p>LPU's College of Business Administration (CBA) offers the Bachelor of Science in Customs Administration (BSCA) program. By taking this program you will not only learn about custom operation, administration, and brokerage but you'll also be exposed to in-depth practical training and seminars facilitated by CBA's Philippine Society of Customs Administration (PSCAS).</p>
                     </div>
                 </div>
-                <div class="more_1">
-                    <button onclick="myFunction()" class="buttonn">Learn More</button>
+                <div class="more_1" style="background-color:#771717;">
+                    <button onclick="window.location.href = 'https://manila.lpu.edu.ph/admissions/program-offerings/'" class="buttonn"style="background-color:#771717;">Learn More</button>
                 </div>
             
 
                 <div class="s1">
                 </div>
-                <div class="scho">
+                <div class="scho"style="background-color:#771717;">
                     <h1>SCHOLARSHIP</h1>
                 </div>
                 <div class="s1_a">
-                    <p>The university offers various scholarship programs to support deserving students in pursuing their education. These scholarships cater to different criteria, including academic achievement, leadership potential, and financial need. The university's Financial Aid Office oversees the administration of these scholarships, ensuring equitable access to education for all qualified students. </p>
+                    <p>
+                        Lyceum of the Philippines University (LPU) extends a range of scholarship opportunities to support students in their pursuit of higher education. These scholarships encompass various categories, including academic excellence, athletic achievements, artistic talents, and financial need. LPU recognizes and rewards outstanding academic performance, athletic prowess, and artistic merit through scholarships tailored to individual achievements and contributions.  </p>
                 </div>
-                <div class="more_2">
-                    <button onclick="window.location.href = 'https://www.ateneo.edu/college/scholarships';" class="buttonn">Learn More</button>
+                <div class="more_2"style="background-color:#771717;">
+                    <button onclick="window.location.href = 'https://manila.lpu.edu.ph/admissions/academic-scholarships-and-financial-aid-grants/';" class="buttonn"style="background-color:#771717;">Learn More</button>
                 </div>
-                <div class="s1_pic" style="background-image: url(../assets/home/admu.png);">
+                <div class="s1_pic" style="background-image: url(../assets/home/lpu.png);">
+
+                </div>
+                `;
+            }   else if (itemId === 'uni6') {
+                universityContent.innerHTML = `
+                <div id="u6" ></div>
+                <div class="u1_b">
+                    <div>
+                        <h2>6</h2>
+                        <!---School Name-->
+                        <h1 style="color:#771717;">MAPÚA UNIVERSITY</h1>
+                        <!---overview-->
+                        <p>
+                            Mapúa University, recognized as one of the leading engineering and technical universities in the Philippines, prides itself on its rich history of academic excellence and innovation. Established in 1925, Mapúa has continuously upheld its commitment to providing top-notch education in various fields, including engineering, architecture, information technology, business, and social sciences.  
+                        </p>
+                        <button onclick="window.location.href = 'https://campaign.mapua.edu.ph/inquiry-form/?utm_source=google&utm_medium=cpc&utm_campaign=2024-MAPUA-DIGITAL-01_Jan-Aug_Mapua_Core_Branded_Institutional_Broad&utm_content=RSA-UndergraduatePrograms&gad_source=1&gclid=CjwKCAjw57exBhAsEiwAaIxaZjrQFX-eD8fGRCPOwWxcR7oyf3XEonvIdSDixgTlBLR6ny4mfY1wARoCMrgQAvD_BwE'" style="background-color:#771717;" class="buttonn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="facility" style="background-color:#771717;">
+                    <h1>FACILITITES</h1>
+                </div>
+                <div class="f1"  style="background-image: url(../assets/univ/MAPUA/build.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f2">
+                    <div>
+                        <h1> Mapúa Building</h1>
+                        <p>
+                            Mapúa University's architectural landscape is a testament to its legacy of engineering excellence and innovation. The university's main building stands as an iconic symbol of academic prowess, with its imposing structure and modern design dominating the skyline of Intramuros, Manila. Within its walls, students encounter cutting-edge laboratories, classrooms equipped with state-of-the-art technology, and collaborative spaces that foster interdisciplinary learning. The building not only serves as a hub for academic instruction but also embodies Mapúa's commitment to shaping future leaders in the fields of engineering, architecture, and technology.
+                        </p>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div>
+                    <h1>Library</h1>
+                    <p>
+                        The Mapúa University library serves as a vital resource center for students and faculty, housing an extensive collection of books, journals, and digital resources that support research and academic inquiry. From engineering texts to architectural blueprints, the library's diverse holdings cater to the specialized needs of Mapúa's academic programs. With its modern facilities, quiet study areas, and group discussion rooms, the library provides an ideal environment for scholarly exploration and intellectual growth.
+                    </p>
+                    </div>
+                </div>
+                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/MAPUA/lib.png);">
+                    <!----image-->
+                </div>
+                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/MAPUA/gym.jpg) ;">
+                    <!----image-->
+                </div>
+                <div class="f6">
+                    <div>
+                        <h1>Gym</h1>
+                        <p>
+                            The gymnasium at Mapúa University is a hub of physical activity and athletic development, offering students opportunities to maintain their health and well-being while fostering a sense of community and sportsmanship. Equipped with state-of-the-art fitness equipment, sports courts, and multipurpose halls, the gym provides a variety of recreational options for students to engage in. Whether participating in intramural sports leagues, attending fitness classes, or simply working out with friends, students can pursue their fitness goals in a supportive and dynamic environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="h_course" style="background-color:#771717;">
+                    <h1>TOP COURSES</h1>
+                </div>
+                
+                <div class="c1"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/biologyeng.jpg);">
+                
+                    <div class="c1_a">
+                        <h1>BS Biological </h1><br>
+                        <h1>Engineering </h1>
+                        <p>It’s essentially  the program that started the engagement between life sciences, and the fundamentals of engineering. BSBE also includes the fusion of different fields such as chemistry, physics, biology, engineering and mathematics </p>
+                    </div>
+                </div>
+                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/chemeng.jpg);">
+                    <div class="c1_a">
+                        <h1>BS Chemical</h1><br>
+                        <h1> Engineering</h1>
+                        <p>Chemical engineering is a branch of engineering that applies principles of chemistry, physics, mathematics, biology, and economics to efficiently use, produce, transform, and transport chemicals, materials, and energy. </p>
+                    </div>
+                </div>
+                <div class="c3"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/eng/eng.jpg);">
+                    <div class="c1_a">
+                        <h1>BS Civil</h1><br>
+                        <h1> Engineering </h1>
+                        <p>BS Civil Engineering in Mapúa is an outcomes-based program which covers structural engineering, geotechnical engineering, transportation engineering, water resources engineering, construction engineering and management, and environmental engineering. </p>
+                    </div>
+                </div>
+                <div class="more_1" style="background-color:#771717;">
+                    <button onclick="window.location.href = 'https://www.mapua.edu.ph/pages/academics/undergraduate" class="buttonn"style="background-color:#771717;">Learn More</button>
+                </div>
+            
+
+                <div class="s1">
+                </div>
+                <div class="scho"style="background-color:#771717;">
+                    <h1>SCHOLARSHIP</h1>
+                </div>
+                <div class="s1_a">
+                    <p>
+                       
+MAPUA University offers various scholarship programs to support deserving students in pursuing their education. These scholarships are designed to recognize academic excellence, leadership potential, and financial need. MAPUA's scholarship offerings encompass a wide range of disciplines and are available to both incoming freshmen and current students. Scholarships may cover full or partial tuition fees, and some programs also provide additional stipends for living expenses, books, and other educational costs.</p>
+                </div>
+                <div class="more_2"style="background-color:#771717;">
+                    <button onclick="window.location.href = 'https://www.mapua.edu.ph/pages/admissions/mapua-scholarships';" class="buttonn"style="background-color:#771717;">Learn More</button>
+                </div>
+                <div class="s1_pic" style="background-image: url(../assets/home/mapua.png);">
+
+                </div>
+                `;
+            }  else if (itemId === 'uni7') {
+                universityContent.innerHTML = `
+                <div id="u7" ></div>
+                <div class="u1_b">
+                    <div>
+                        <h2>7</h2>
+                        <!---School Name-->
+                        <h1 style="color:#4e5cc5;">NATIONAL UNIVERSITY</h1>
+                        <!---overview-->
+                        <p>
+                          
+National University (NU) is a private, non-sectarian educational institution located in Manila, Philippines. Established in 1900, NU has a rich history of providing quality education and fostering academic excellence. Committed to its mission of producing competent and globally competitive professionals, NU offers a wide range of undergraduate, graduate, and postgraduate programs across various fields of study. 
+                        </p>
+                        <button onclick="window.location.href = 'https://national-u.edu.ph/nu-manila/admissions/'" style="background-color:#4e5cc5;" class="buttonn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="facility" style="background-color:#4e5cc5;">
+                    <h1>FACILITITES</h1>
+                </div>
+                <div class="f1"  style="background-image: url(../assets/univ/NU/BUILD.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f2">
+                    <div>
+                        <h1>NU Building</h1>
+                        <p>
+                            National University (NU) boasts a campus adorned with modern architectural marvels that reflect its commitment to academic excellence and innovation. The university's main building stands as a symbol of pride and progress, with its sleek lines and contemporary design making a bold statement in the heart of Manila. Within its walls, students find cutting-edge classrooms, laboratories equipped with advanced technology, and collaborative spaces designed to facilitate dynamic learning experiences. The building serves as a hub for intellectual inquiry and cultural exchange, embodying NU's vision of shaping well-rounded individuals who are prepared to meet the challenges of the future.
+                        </p>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div>
+                    <h1>Library</h1>
+                    <p>
+                        The library at National University is a hub of knowledge and resources, serving as a vital academic center for students, faculty, and researchers alike. With its extensive collection of books, journals, periodicals, and digital resources, the library provides comprehensive support for learning, research, and scholarly endeavors across various disciplines. Equipped with state-of-the-art facilities and a conducive learning environment, the library offers ample study spaces, computer labs, and multimedia resources to accommodate the diverse needs of its users.
+                    </p>
+                    </div>
+                </div>
+                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/NU/lib.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/NU/gym.jpg) ;">
+                    <!----image-->
+                </div>
+                <div class="f6">
+                    <div>
+                        <h1>Gym</h1>
+                        <p>
+                            The gymnasium at National University is a bustling center of athletic activity and physical fitness, offering students a variety of opportunities to stay active and healthy. Equipped with state-of-the-art exercise equipment, sports courts, and fitness studios, the gym provides a range of options for students to pursue their fitness goals. Whether participating in intramural sports leagues, attending group exercise classes, or simply working out independently, students can find a supportive and encouraging environment to engage in physical activity. Moreover, the gym serves as a venue for sports events, tournaments, and other extracurricular activities that promote teamwork, sportsmanship, and school spirit among NU's student community.
+                        </p>
+                    </div>
+                </div>
+                <div class="h_course" style="background-color:#4e5cc5;">
+                    <h1>TOP COURSES</h1>
+                </div>
+                
+                <div class="c1"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/archi/bg1.jpg);">
+                
+                    <div class="c1_a">
+                        <h1>BS Architecture</h1>
+                        <p>National University's five-year Architecture program prepares the students for planning and designing, conserving, renovating, and restoring all kinds of structures. </p>
+                    </div>
+                </div>
+                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/ECE.jpg);">
+                    <div class="c1_a">
+                        <h1>BS Electronics and </h1><br>
+                        <h1>Communications</h1><br>
+                        <h1> Engineering</h1>
+                        <p>The five-year program aims to teach the fundamentals of electronics and communications engineering. It also trains students in the academic and practical applications of project study, computer exercises, and practicum in a field of their choice.</p>
+                    </div>
+                </div>
+                <div class="c3"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/eng/eng.jpg);">
+                    <div class="c1_a">
+                        <h1>BS Civil</h1><br>
+                        <h1> Engineering </h1>
+                        <p>The five-year program's curriculum covers nearly all branches of engineering: structural engineering, geotechnical engineering, transportation engineering, water resources and hydraulics engineering, environmental engineering, and so on. </p>
+                    </div>
+                </div>
+                <div class="more_1" style="background-color:#4e5cc5;">
+                    <button onclick="window.location.href = 'https://national-u.edu.ph/programs/'" class="buttonn"style="background-color:#4e5cc5;">Learn More</button>
+                </div>
+            
+
+                <div class="s1">
+                </div>
+                <div class="scho"style="background-color:#4e5cc5;">
+                    <h1>SCHOLARSHIP</h1>
+                </div>
+                <div class="s1_a">
+                    <p>
+                       
+                        National University (NU) provides scholarship opportunities to support students in their pursuit of higher education. These scholarships are aimed at recognizing academic excellence, leadership potential, and financial need. NU offers various scholarship programs for both incoming freshmen and continuing students, covering a wide range of fields of study.</p>
+                </div>
+                <div class="more_2"style="background-color:#4e5cc5;">
+                    <button onclick="window.location.href = 'https://national-u.edu.ph/nu-manila/scholarships/';" class="buttonn"style="background-color:#4e5cc5;">Learn More</button>
+                </div>
+                <div class="s1_pic" style="background-image: url(../assets/home/nu.png);">
+
+                </div>
+                `;
+            }else if (itemId === 'uni8') {
+                universityContent.innerHTML = `
+                <div id="u8" ></div>
+                <div class="u1_b">
+                    <div>
+                        <h2>8</h2>
+                        <!---School Name-->
+                        <h1 style="color:#771717;">POLYTECHNIC UNIVERSITY OF THE PHILIPPINES</h1>
+                        <!---overview-->
+                        <p>
+                          
+The Polytechnic University of the Philippines (PUP) is a premier state university in the Philippines known for its commitment to providing accessible, affordable, and quality education to a diverse student population. Established in 1904, PUP has a long-standing tradition of excellence in higher education and has since become one of the country's leading institutions for technical and professional education. 
+                        </p>
+                        <button onclick="window.location.href = 'https://www.pup.edu.ph/iapply/'" style="background-color:#771717;" class="buttonn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="facility" style="background-color:#771717;">
+                    <h1>FACILITITES</h1>
+                </div>
+                <div class="f1"  style="background-image: url(../assets/univ/PUP/build.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f2">
+                    <div>
+                        <h1>PUP Building</h1>
+                        <p>
+                            Polytechnic University of the Philippines (PUP) campus showcases a blend of modern architecture and functional design, reflecting the institution's commitment to accessible and quality education. The main building stands as a symbol of academic excellence and innovation, providing students with state-of-the-art facilities for learning and research.
+                        </p>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div>
+                    <h1>Library</h1>
+                    <p>
+                        PUP's library serves as a vital resource center for students, offering an extensive collection of books, journals, and digital resources to support academic endeavors. With its spacious reading areas and computer labs, the library provides students with a conducive environment for study and research, fostering a culture of intellectual inquiry and scholarship.
+                    </p>
+                    </div>
+                </div>
+                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/PUP/lib.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/PUP/gym.jpg) ;">
+                    <!----image-->
+                </div>
+                <div class="f6">
+                    <div>
+                        <h1>Gym</h1>
+                        <p>
+                            The gymnasium at PUP is a hub of physical activity and wellness, providing students with opportunities to stay fit and healthy. Equipped with modern fitness equipment and sports facilities, the gym offers a variety of exercise options, from cardio workouts to strength training. Additionally, the gym hosts sports events and recreational activities, promoting teamwork and camaraderie among students.
+                        </p>
+                    </div>
+                </div>
+                <div class="h_course" style="background-color:#771717;">
+                    <h1>TOP COURSES</h1>
+                </div>
+                
+                <div class="c1"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/journ.jpg);">
+                
+                    <div class="c1_a">
+                        <h1>BA in Journalism</h1>
+                        <p>Students enrolled in this course are expected to develop strong writing and reporting skills, as well as master various production and distribution techniques for all kinds of media platforms. </p>
+                    </div>
+                </div>
+                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/econo.jpg);">
+                    <div class="c1_a">
+                        <h1> BS in Economics </h1>
+                        <p> Other than completing the classroom requirements of the curriculum, students will also be required to undergo a two-year residence for out-of-the-class learnings. While most program alumni turn out to be economic analysts, graduates may also pursue corporate planning and bank analyst jobs with this degree.  </p>
+                    </div>
+                </div>
+                <div class="c3"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/cpe.jpg);">
+                    <div class="c1_a">
+                        <h1>BS Computer</h1><br>
+                        <h1> Engineering </h1>
+                        <p>PUP’s Computer Engineering curriculum is divided into four tracks: Computer Network Engineering, Machine Learning, Big Data, and System Development. Although every track comes with specialized core classes, the course as a whole is generally centered on computer systems and electronic equipment. </p>
+                    </div>
+                </div>
+                <div class="more_1" style="background-color:#771717;">
+                    <button onclick="window.location.href = 'https://www.pup.edu.ph/academic/programs'" class="buttonn"style="background-color:#771717;">Learn More</button>
+                </div>
+            
+
+                <div class="s1">
+                </div>
+                <div class="scho"style="background-color:#771717;">
+                    <h1>SCHOLARSHIP</h1>
+                </div>
+                <div class="s1_a">
+                    <p>
+                       
+                        
+The Polytechnic University of the Philippines (PUP) is renowned for its commitment to providing accessible and quality education to students from all walks of life. As part of this mission, PUP offers various scholarship programs aimed at supporting academically gifted, financially disadvantaged, and deserving students in pursuing their higher education goals. These scholarship programs cover a wide range of criteria, including academic excellence, leadership potential, financial need, and specific fields of study. </p>
+                </div>
+                <div class="more_2"style="background-color:#771717;">
+                    <button onclick="window.location.href = 'https://www.pup.edu.ph/students/scholarships';" class="buttonn"style="background-color:#771717;">Learn More</button>
+                </div>
+                <div class="s1_pic" style="background-image: url(../assets/home/pup.png);">
+
+                </div>
+                `;
+            }else if (itemId === 'uni9') {
+                universityContent.innerHTML = `
+                <div id="u9" ></div>
+                <div class="u1_b">
+                    <div>
+                        <h2>9</h2>
+                        <!---School Name-->
+                        <h1 style="color:#c43c3c;">SAN BEDA UNIVERSITY</h1>
+                        <!---overview-->
+                        <p>
+                          
+                            San Beda University, founded in 1901, is a private Roman Catholic institution located in Manila, Philippines. It is known for its rigorous academic programs, particularly in law, business, accountancy, and medicine. SBU is committed to providing holistic education that integrates faith, academic excellence, and service to society. The university's strong emphasis on values formation and character development prepares students to become principled leaders and compassionate individuals. 
+                        </p>
+                        <button onclick="window.location.href = 'https://www.sanbeda.edu.ph/admissions'" style="background-color:#c43c3c;" class="buttonn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="facility" style="background-color:#c43c3c;">
+                    <h1>FACILITITES</h1>
+                </div>
+                <div class="f1"  style="background-image: url(../assets/univ/SB/build.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f2">
+                    <div>
+                        <h1>San Beda Building</h1>
+                        <p>
+                            San Beda University's campus features a blend of historic charm and modern facilities, with its main building serving as a focal point of academic excellence. Steeped in rich heritage and architectural significance, the main building reflects the university's commitment to providing students with a conducive environment for learning and growth.
+                        </p>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div>
+                    <h1>Library</h1>
+                    <p>
+                        San Beda University stands as a bastion of knowledge and intellectual inquiry, offering students access to a vast array of resources to support their academic pursuits. From books and journals to digital databases, the library provides a wealth of information across various disciplines, fostering a culture of research and lifelong learning.
+                    </p>
+                    </div>
+                </div>
+                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/SB/lib.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/SB/gym.jpg) ;">
+                    <!----image-->
+                </div>
+                <div class="f6">
+                    <div>
+                        <h1>Gym</h1>
+                        <p>
+                            San Beda University's gymnasium provides students with opportunities to prioritize their physical health and well-being. Equipped with modern exercise equipment and sports facilities, the gym encourages students to engage in physical activities, sports, and fitness programs, promoting a holistic approach to education and personal development.
+                        </p>
+                    </div>
+                </div>
+                <div class="h_course" style="background-color:#c43c3c;">
+                    <h1>TOP COURSES</h1>
+                </div>
+                
+                <div class="c1"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/account.jpg);">
+                
+                    <div class="c1_a">
+                        <h1>BS in Accountancy</h1>
+                        <p>San Beda University ensures that students taking their BSA program are equipped with necessary technical knowledge for such fields. Aside from financial, managerial accounting, audit, taxation, and business law, subjects in Social Sciences and Humanities, Mathematics and Natural Sciences, Theology, Filipino, English, Languages and Literature, Human Kinetics and National Service Training Program are also integrated in the program.</p>
+                    </div>
+                </div>
+                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/LAW.jpg);">
+                    <div class="c1_a">
+                        <h1>BA in Political</h1><br>
+                        <h1>Science</h1>
+                        <p>Taking AB Political Science will enable you to understand the different social and political issues of our times. By learning about political concepts, political behaviors, government policies, theories, and international laws and relations, you can evaluate how laws and policies can be further improved for the benefit of our society and its constituents. </p>
+                    </div>
+                </div>
+                <div class="c3"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/nurse.jpg);">
+                    <div class="c1_a">
+                        <h1>BS in Nursing</h1>
+                        <p>In taking their Bachelor of Science in Nursing program (BSN), you will be imbued with the values of compassion, competence, collaboration, community engagement, and cultural pluralism. Aside from preparing students for their Related Learning Experiences (RLE) training, the College of Nursing also takes pride in their continuous effort to learn about best practices that can further improve their instruction and assessment.  </p>
+                    </div>
+                </div>
+                <div class="more_1" style="background-color:#c43c3c;">
+                    <button onclick="window.location.href = 'https://www.sanbeda.edu.ph/post/118/degree-programs'" class="buttonn"style="background-color:#c43c3c;">Learn More</button>
+                </div>
+            
+
+                <div class="s1">
+                </div>
+                <div class="scho"style="background-color:#c43c3c;">
+                    <h1>SCHOLARSHIP</h1>
+                </div>
+                <div class="s1_a">
+                    <p>
+                       
+                        
+                        San Beda University offers various scholarship programs to support deserving students in their pursuit of higher education. These scholarships are based on academic merit, financial need, leadership potential, and special talents. SBU strives to provide opportunities for students from diverse backgrounds to access quality education through its scholarship initiatives. </p>
+                </div>
+                <div class="more_2"style="background-color:#c43c3c;">
+                    <button onclick="window.location.href = 'https://www.sanbeda.edu.ph/posts/accounting/419/scholarship';" class="buttonn"style="background-color:#c43c3c;">Learn More</button>
+                </div>
+                <div class="s1_pic" style="background-image: url(../assets/home/sb.png);">
+
+                </div>
+                `;
+            }else if (itemId === 'uni10') {
+                universityContent.innerHTML = `
+                <div id="u10" ></div>
+                <div class="u1_b">
+                    <div>
+                        <h2>10</h2>
+                        <!---School Name-->
+                        <h1 style="color:#c43c3c;">UNIVERSITY OF THE EAST</h1>
+                        <!---overview-->
+                        <p>
+                          
+                            The University of the East, established in 1946, is a private university with campuses in Manila and Caloocan City, Philippines. UE is recognized for its diverse academic offerings across various fields such as business, engineering, arts and sciences, dentistry, and law. The university is dedicated to providing quality education and fostering innovation and entrepreneurship among its students. UE's vibrant campus life and dynamic learning environment contribute to the holistic development of its students. 
+                        </p>
+                        <button onclick="window.location.href = 'https://www.ue.edu.ph/onlineadmission/main.html'" style="background-color:#c43c3c;" class="buttonn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="facility" style="background-color:#c43c3c;">
+                    <h1>FACILITITES</h1>
+                </div>
+                <div class="f1"  style="background-image: url(../assets/course/uebuild.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f2">
+                    <div>
+                        <h1>UE Building</h1>
+                        <p>
+                            The University of the East (UE) Manila Campus is a vibrant and dynamic institution located in the heart of Manila, Philippines. Established in 1946, UE Manila has a rich history of providing quality education and producing competent professionals across various fields. The campus boasts modern facilities, state-of-the-art laboratories, and well-equipped classrooms, providing students with a conducive learning environment.
+                        </p>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div>
+                    <h1>Library</h1>
+                    <p>
+                        UE's library serves as a hub of knowledge and learning, offering students access to a vast collection of resources to support their academic pursuits. From textbooks to research journals and digital databases, the library provides a wealth of information across various disciplines, fostering a culture of intellectual curiosity and scholarly inquiry.
+                    </p>
+                    </div>
+                </div>
+                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/UE/lib.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/UE/gym.png) ;">
+                    <!----image-->
+                </div>
+                <div class="f6">
+                    <div>
+                        <h1>Gym</h1>
+                        <p>
+                            The gymnasium at UE is a center for physical fitness and wellness, providing students with opportunities to maintain their health and well-being. Equipped with modern exercise equipment and sports facilities, the gym offers a range of fitness programs and activities to suit students' preferences and needs.
+                        </p>
+                    </div>
+                </div>
+                <div class="h_course" style="background-color:#c43c3c;">
+                    <h1>TOP COURSES</h1>
+                </div>
+                
+                <div class="c1"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/dental.jpg);">
+                
+                    <div class="c1_a">
+                        <h1>Doctor of Dental</h1><br>
+                        <h1>Medicine</h1>
+                        <p>The Doctor of Dental Medicine (DMD) is a 6-year program with 15 to 25 units per semester at the UE College of Dentistry. The school has been granted Level III accreditation by Philippine Accrediting Association of Schools, Colleges, and Universities (PAASCU) for their exemplary quality of education, so you know that your money will be well-spent. </p>
+                    </div>
+                </div>
+                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/account.jpg);">
+                    <div class="c1_a">
+                        <h1>BA in Accountancy </h1>
+                        <p>The Bachelor of Science in Accountancy (BSA) is a four-year curricular program with nine to 27 units per semester. It provides general accounting education for students who wish to deal with financial records and transactions in sectors such as the academe, commerce and industry, and the government.</p>
+                    </div>
+                </div>
+                <div class="c3"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/business.jpg);">
+                    <div class="c1_a">
+                        <h1>BS in Business</h1><br>
+                        <h1>Administration</h1>
+                        <p>The Bachelor of Science in Business Administration (BSBA) is a curriculum program that consists of both general education and business-related subjects that will total 6 to 23 units per semester. This is specially designed for students who want to pave their paths in business and commerce.</p>
+                    </div>
+                </div>
+                <div class="more_1" style="background-color:#c43c3c;">
+                    <button onclick="window.location.href = 'https://www.ue.edu.ph/mla/quick-list-of-academic-programs/'" class="buttonn"style="background-color:#c43c3c;">Learn More</button>
+                </div>
+            
+
+                <div class="s1">
+                </div>
+                <div class="scho"style="background-color:#c43c3c;">
+                    <h1>SCHOLARSHIP</h1>
+                </div>
+                <div class="s1_a">
+                    <p>
+                        The University of the East provides scholarship opportunities to academically excellent and financially challenged students. These scholarships cover tuition fees, allowances, and other educational expenses. UE aims to assist deserving students in achieving their academic goals and fulfilling their potential through its scholarship programs.</p>
+                </div>
+                <div class="more_2"style="background-color:#c43c3c;">
+                    <button onclick="window.location.href = 'https://www.ue.edu.ph/cal/scholarships-basic-ed/';" class="buttonn"style="background-color:#c43c3c;">Learn More</button>
+                </div>
+                <div class="s1_pic" style="background-image: url(../assets/home/ue.png);">
+
+                </div>
+                `;
+            }else if (itemId === 'uni11') {
+                universityContent.innerHTML = `
+                <div id="u11" ></div>
+                <div class="u1_b">
+                    <div>
+                        <h2>11</h2>
+                        <!---School Name-->
+                        <h1 style="color:#7B1113;">UNIVERSITY OF THE PHILIPPINES</h1>
+                        <!---overview-->
+                        <p>
+                            The University of the Philippines, founded in 1908, is the country's national university and premier institution of higher learning. With campuses in different regions of the Philippines, UP is known for its academic excellence, research prowess, and commitment to public service. It offers a wide array of undergraduate and graduate programs in fields ranging from the sciences and engineering to the humanities and social sciences. UP's rich tradition of academic freedom, critical thinking, and social responsibility has produced leaders in various fields who have made significant contributions to Philippine society.
+                        </p>
+                        <button onclick="window.location.href = 'https://upcat.up.edu.ph/" style="background-color:#7B1113;" class="buttonn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="facility" style="background-color:#7B1113;">
+                    <h1>FACILITITES</h1>
+                </div>
+                <div class="f1"  style="background-image: url(../assets/univ/UP/UP.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f2">
+                    <div>
+                        <h1>UP Building</h1>
+                        <p>
+                            The University of the Philippines (UP) is renowned for its iconic campus buildings, each steeped in rich history and architectural significance. From the majestic Quezon Hall to the modern structures of its constituent colleges, UP's buildings embody the university's commitment to academic excellence and cultural heritage. These landmarks serve not only as centers of learning but also as symbols of UP's enduring legacy as the country's premier state university.
+                        </p>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div>
+                    <h1>Library</h1>
+                    <p>
+                        UP's library system is one of the largest and most comprehensive in the Philippines, with each campus boasting its own extensive collection of books, journals, and research materials. From the Diliman Main Library to the specialized libraries in various colleges, UP's libraries provide students and faculty with access to a wealth of information across a wide range of disciplines. With modern facilities, digital resources, and knowledgeable staff, UP's libraries are vital hubs for academic research, intellectual inquiry, and lifelong learning.
+                    </p>
+                    </div>
+                </div>
+                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/UP/lib.jpeg);">
+                    <!----image-->
+                </div>
+                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/UP/gym.jpg) ;">
+                    <!----image-->
+                </div>
+                <div class="f6">
+                    <div>
+                        <h1>Gym</h1>
+                        <p>
+                            UP's gymnasiums and sports facilities offer students opportunities for physical fitness, recreation, and competitive sports. From indoor courts for basketball and volleyball to outdoor tracks and fields for athletics, UP's gyms cater to a diverse range of sports and activities. Additionally, UP's gyms host intramural leagues, intercollegiate competitions, and community events, fostering a culture of sportsmanship, teamwork, and healthy living among students and faculty alike.
+                        </p>
+                    </div>
+                </div>
+                <div class="h_course" style="background-color:#7B1113">
+                    <h1>TOP COURSES</h1>
+                </div>
+                
+                <div class="c1"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/business.jpg);">
+                
+                    <div class="c1_a">
+                        <h1> BS Business</h1><br>
+                        <h1> Administration </h1>
+                        <p>This four-year course seeks to equip aspiring managers and entrepreneurs with the skills they need to excel in the field of business. Due to the course’s specialized curriculum and hands-on classes, fresh graduates can immediately assume leadership positions in corporate firms upon completing the course.  </p>
+                    </div>
+                </div>
+                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/eng/eng.jpg);">
+                    <div class="c1_a">
+                        <h1> BS Civil</h1><br>
+                        <h1>  Engineering </h1>
+                        <p>Other than training budding professionals in six specialized fields of civil engineering, the holistic course also includes classes related to social sciences and humanities. Graduates of this course are also qualified to apply to master’s and doctoral programs under the school’s National Graduate School of Engineering. </p>
+                    </div>
+                </div>
+                <div class="c3"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/bio.jpg);">
+                    <div class="c1_a">
+                        <h1>BS in Biology </h1><br>
+                        <p>To ensure that students are ready to be professionals in the industry, the curriculum includes theoretical biological principles, laboratory and field techniques, and data analytics. As one of the prestigious quota-courses in UPD, the program consistently produces competent, service-oriented, and internationally competitive graduates. </p>
+                    </div>
+                </div>
+                <div class="more_1" style="background-color:#7B1113;">
+                    <button onclick="window.location.href = 'https://upd.edu.ph/academics/undergraduate/" class="buttonn"style="background-color:#7B1113;">Learn More</button>
+                </div>
+            
+
+                <div class="s1">
+                </div>
+                <div class="scho"style="background-color:#7B1113;">
+                    <h1>SCHOLARSHIP</h1>
+                </div>
+                <div class="s1_a">
+                    <p>
+                        The University of the Philippines offers a wide range of scholarship programs to support undergraduate and graduate students across its campuses. These scholarships include merit-based awards, need-based financial aid, research grants, and fellowships. UP is committed to providing access to quality education and fostering excellence in scholarship, research, and public service through its diverse scholarship offerings.
+</p>
+                </div>
+                <div class="more_2"style="background-color:#7B1113;">
+                    <button onclick="window.location.href = 'https://upd.edu.ph/students/scholarships-and-grants/';" class="buttonn"style="background-color:#7B1113;">Learn More</button>
+                </div>
+                <div class="s1_pic" style="background-image: url(../assets/home/up.png);">
+
+                </div>
+                `;
+            }else if (itemId === 'uni12') {
+                universityContent.innerHTML = `
+                <div id="u12" ></div>
+                <div class="u1_b">
+                    <div>
+                        <h2>12</h2>
+                        <!---School Name-->
+                        <h1 style="color:#FEC00F;">UNIVERSITY OF SANTO TOMAS</h1>
+                        <!---overview-->
+                        <p>
+                            The University of Santo Tomas, established in 1611, is the oldest existing university in Asia and one of the largest Catholic universities in the world. Located in Manila, Philippines, UST offers a comprehensive range of academic programs in disciplines such as medicine, law, architecture, engineering, and arts and letters. The university is renowned for its commitment to academic excellence, research innovation, and the holistic development of its students. UST's strong sense of tradition, cultural heritage, and core values of competence, compassion, and commitment to truth have shaped generations of Thomasians into globally competitive professionals and compassionate leaders.
+                        </p>
+                        <button onclick="window.location.href = 'https://ustet.ust.edu.ph/" style="background-color:#FEC00F;" class="buttonn">Apply Now</button>
+                    </div>
+                </div>
+                <div class="facility" style="background-color:#FEC00F;">
+                    <h1>FACILITITES</h1>
+                </div>
+                <div class="f1"  style="background-image: url(../assets/univ/UST/build.jpeg);">
+                    <!----image-->
+                </div>
+                <div class="f2">
+                    <div>
+                        <h1>UST Building</h1>
+                        <p>
+                            The University of Santo Tomas (UST) is renowned for its stunning campus architecture, characterized by a harmonious blend of Spanish colonial and neoclassical styles. The Main Building, with its iconic facade and grand central staircase, stands as a symbol of UST's rich heritage and academic tradition. As the oldest existing university building in Asia, it serves as the centerpiece of the campus and houses administrative offices, classrooms, and historic halls that echo with centuries of learning and scholarship.
+                        </p>
+                    </div>
+                </div>
+                <div class="f3">
+                    <div>
+                    <h1>Library</h1>
+                    <p>
+                        UST's Miguel de Benavides Library is a treasure trove of knowledge and learning, housing a vast collection of books, manuscripts, and archival materials. With its expansive reading rooms, digital resources, and specialized collections, the library provides students and scholars with access to a wealth of information across various disciplines. As a hub for intellectual inquiry and research, the library plays a central role in UST's academic community, fostering a culture of scholarship and lifelong learning among its patrons.
+                    </p>
+                    </div>
+                </div>
+                <div class="f4" id="f4_u2"  style="background-image: url(../assets/univ/UST/lib.jpg);">
+                    <!----image-->
+                </div>
+                <div class="f5" id="f5_u2"  style="background-image: url(../assets/univ/UST/gym.jpg) ;">
+                    <!----image-->
+                </div>
+                <div class="f6">
+                    <div>
+                        <h1>Gym</h1>
+                        <p>
+                            UST's Sports Complex offers students a modern and well-equipped facility for physical fitness and sports activities. From state-of-the-art fitness centers to indoor courts and swimming pools, the gym provides students with ample opportunities to stay active and healthy. Additionally, UST's Sports Complex hosts intramural leagues, intercollegiate competitions, and recreational programs that promote teamwork, sportsmanship, and holistic development among students. With its vibrant sports culture and commitment to excellence, UST's gymnasium embodies the university's motto of "Virtus et Scientia" – Virtue and Knowledge.
+                        </p>
+                    </div>
+                </div>
+                <div class="h_course" style="background-color:#FEC00F">
+                    <h1>TOP COURSES</h1>
+                </div>
+                
+                <div class="c1"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/nurse.jpg);">
+                
+                    <div class="c1_a">
+                        <h1> BS in Nursing</h1>
+                        <p>The University of Santo Tomas is most sought-after for its various medical-related courses, including BS Nursing. As they say, nursing is both a passion and profession because the goal is to provide holistic care for individuals regardless of age, gender, or status. </p>
+                    </div>
+                </div>
+                <div class="c2"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/phar.jpg);">
+                    <div class="c1_a">
+                        <h1> BS in Pharmacy</h1>
+                        <p>This program provides a wide range of experience in different areas like community, public health, clinical pharmacy, regulatory affairs, and pharmaceutical manufacturing. </p>
+                    </div>
+                </div>
+                <div class="c3"style="background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.692)),url(../assets/course/account.jpg);">
+                    <div class="c1_a">
+                        <h1>BS in Accountancy</h1>
+                        <p>Students taking up BS Accountancy are expected to be knowledgeable about business concepts, accounting functions, and auditing standards through subject offerings like Financial Management, Income Taxation, and International Business and Trade. Critical thinking and problem-solving skills are constantly developed as you go through your journey as an Accountancy major.</p>
+                    </div>
+                </div>
+                <div class="more_1" style="background-color:#FEC00F;">
+                    <button onclick="window.location.href = 'https://www.ust.edu.ph/academics/programs/" class="buttonn"style="background-color:#FEC00F;">Learn More</button>
+                </div>
+            
+
+                <div class="s1">
+                </div>
+                <div class="scho"style="background-color:#FEC00F;">
+                    <h1>SCHOLARSHIP</h1>
+                </div>
+                <div class="s1_a">
+                    <p>
+                        The University of Santo Tomas provides scholarship opportunities to recognize and support outstanding students who demonstrate academic excellence, leadership skills, and community involvement. These scholarships cover tuition fees, stipends, and other educational expenses. UST aims to nurture talented individuals and empower them to become competent professionals and ethical leaders through its scholarship programs.
+</p>
+                </div>
+                <div class="more_2"style="background-color:#FEC00F;">
+                    <button onclick="window.location.href = 'https://ofad.ust.edu.ph/scholarships/';" class="buttonn"style="background-color:#FEC00F;">Learn More</button>
+                </div>
+                <div class="s1_pic" style="background-image: url(../assets/home/ust.png);">
 
                 </div>
                 `;
