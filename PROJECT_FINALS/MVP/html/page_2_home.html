@@ -18,6 +18,7 @@
 </head>
 
 <body>
+    
     <div class="container">
         <div class="header" id="home">
             <a href="/PROJECT_FINALS/MVP/html/page_2_home.html">
@@ -30,8 +31,17 @@
             <a href="../html/page_4_university.html">Universities</a>
             <a href="../html/page_5_about.html">About Us</a>
             <a href="../html/page_6_contact.html">Contacts</a>
-            <input type="search" class="search_box" placeholder="Search..">
         </div>
+            <div class="search-box">
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Search.." autocomplete="off">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="result-box">
+                    
+                </div>
+            </div>
+        
         <div class="content">
         </div>
         <div class="content_2">
@@ -56,28 +66,28 @@
             </div>
         </div>
 
-        <div class="cc1" onclick="window.location.href = 'eng_course.html';">
+        <div class="cc1" onclick="window.location.href = '../html/page_3_course.html?course=c5';">
             <div class="Courses">
                 <p>ENGINEERING</p>
             </div>
         </div>
-        <div class="cc2">
+        <div class="cc2" onclick="window.location.href = '../html/page_3_course.html?course=c3';">
             <div class="Courses">
                 <p>BUSINESS</p>
             </div>
         </div>
 
-        <div class="cc3" onclick="window.location.href = 'archi_course.html';">
+        <div class="cc3" onclick="window.location.href = '../html/page_3_course.html?course=c1';">
             <div class="Courses">
                 <p>ARCHITECTURE</p>
             </div>
         </div>
-        <div class="cc4">
+        <div class="cc4" onclick="window.location.href = '../html/page_3_course.html?course=c7';">
             <div class="Courses">
-                <p>MEDICINE</p>
+                <p>HEALTH</p>
             </div>
         </div>
-        <div class="cc5">
+        <div class="cc5" onclick="window.location.href = '../html/page_3_course.html?course=c6';">
             <div class="Courses">
                 <p>FORMAL SCIENCES</p>
             </div>
@@ -119,7 +129,7 @@
             <img class="character" src="../assets/top/dlsu.png">
         </div>
         <!---up-->
-        <div class="univ_info">
+        <div class="univ_info" id="course-1">
             <div class="infoo">
                 <h1>1. University of the Philippines</h1>
                 <p><i class="fa-solid fa-quote-left"></i> &nbsp;
@@ -134,7 +144,7 @@
             </div>
         </div>
         <!---admu-->
-        <div class="univ_info2">
+        <div class="univ_info2" id="course-2">
             <div class="infoo">
                 <h1>2. Ateneo de Manila University</h1>
                 <p><i class="fa-solid fa-quote-left"></i> &nbsp;
@@ -148,7 +158,7 @@
             </div>
         </div>
         <!---dlsu-->
-        <div class="univ_info3">
+        <div class="univ_info3" id="course-3" >
             <div class="infoo">
                 <h1>3. De La Salle University</h1>
                 <p><i class="fa-solid fa-quote-left"></i> &nbsp;
@@ -224,9 +234,9 @@
 
             </div>
         </div>
+        
     </div>
-
-
+    <script src="../html/autocomplete.js"></script>
 </body>
 
 </html>
