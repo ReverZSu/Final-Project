@@ -51,7 +51,15 @@
             <a href="../html/page_4_university.html">Universities</a>
             <a href="../html/page_5_about.html">About Us</a>
             <a href="../html/page_6_contact.html" class="active">Contacts</a>
-                    <input type="search" class="search_box" placeholder="Search..">
+        </div>
+        <div class="search-box">
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Search.." autocomplete="off">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="result-box">
+                
+            </div>
         </div>
         <!---content-->
         <div class="picture">
@@ -169,5 +177,6 @@
         alert("Number copied: " + copyText.textContent);
         }
     </script>
+    <script src="../html/autocomplete.js"></script>
 </body>
 </html>

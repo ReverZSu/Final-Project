@@ -49,7 +49,15 @@
             <a href="../html/page_4_university.html" class="active">Universities</a>
             <a href="../html/page_5_about.html">About Us</a>
             <a href="../html/page_6_contact.html">Contacts</a>
-            <input type="search" class="search_box" placeholder="Search..">
+        </div>
+        <div class="search-box">
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Search.." autocomplete="off">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="result-box">
+                
+            </div>
         </div>
 
         <!---wallpaper-->
@@ -255,35 +263,21 @@
     </div>
 
     <script>
-        function myFunction() {
-     let text = "You will be redirected to the official site of the university.\n OK or Cancel";
-     let result = confirm(text);
-     if (result == true) {
-         window.location.href = 'https://www.adamson.edu.ph/v1/?page=school-fee-college';
-     } 
-     else {
-         window.location.href='page_4_university.html';
-     }
-     }
-     
-
-
-
-     document.addEventListener('DOMContentLoaded', function () {
+        document.addEventListener('DOMContentLoaded', function () {
     // Get the item elements
     var items = document.querySelectorAll('.item');
 
     // Get the university content div
     var universityContent = document.getElementById('universityContent');
 
-    // Loop through each item and add click event listener
-    items.forEach(function (item) {
-        item.addEventListener('click', function () {
-            // Get the ID of the clicked item
-            var itemId = this.getAttribute('id');
+    var urlParams = new URLSearchParams(window.location.search);
+    var universityId = urlParams.get('universityy');
+
+    // Function to update university content
+    function updateUniversityContent(universityId) {
 
             // Update the university content based on the clicked item ID
-            if (itemId === 'uni1') {
+            if (universityId === 'uni1') {
                 universityContent.innerHTML = `
                 <div id="u1"></div>
             <div class="u1_b">
@@ -408,7 +402,7 @@
 
             </div>
                 `;
-            } else if (itemId === 'uni2') {
+            } else if (universityId === 'uni2') {
                 universityContent.innerHTML = `
                 <div id="u2" ></div>
                 <div class="u1_b">
@@ -513,7 +507,7 @@
 
                 </div>
                 `;
-            }else if (itemId === 'uni3') {
+            }else if (universityId === 'uni3') {
                 // Update content for uni3
                 universityContent.innerHTML = `
                 <div id="u3" ></div>
@@ -622,7 +616,7 @@ De La Salle University (DLSU) offers a range of scholarship opportunities to sup
 
                 </div>
                 `;
-            } else if (itemId === 'uni4') {
+            } else if (universityId === 'uni4') {
                 universityContent.innerHTML = `
                 <div id="u4" ></div>
                 <div class="u1_b">
@@ -719,7 +713,7 @@ Far Eastern University (FEU) offers a variety of scholarships and financial aid 
 
                 </div>
                 `;
-            }else if (itemId === 'uni4') {
+            }else if (universityId === 'uni5') {
                 universityContent.innerHTML = `
                 <div id="u3" ></div>
                 <div class="u1_b">
@@ -827,7 +821,7 @@ De La Salle University (DLSU) offers a range of scholarship opportunities to sup
 
                 </div>
                 `;
-            } else if (itemId === 'uni5') {
+            } else if (universityId === 'uni5') {
                 universityContent.innerHTML = `
                 <div id="u5" ></div>
                 <div class="u1_b">
@@ -924,7 +918,7 @@ De La Salle University (DLSU) offers a range of scholarship opportunities to sup
 
                 </div>
                 `;
-            }   else if (itemId === 'uni6') {
+            }   else if (universityId === 'uni6') {
                 universityContent.innerHTML = `
                 <div id="u6" ></div>
                 <div class="u1_b">
@@ -1023,7 +1017,7 @@ MAPUA University offers various scholarship programs to support deserving studen
 
                 </div>
                 `;
-            }  else if (itemId === 'uni7') {
+            }  else if (universityId === 'uni7') {
                 universityContent.innerHTML = `
                 <div id="u7" ></div>
                 <div class="u1_b">
@@ -1123,7 +1117,7 @@ National University (NU) is a private, non-sectarian educational institution loc
 
                 </div>
                 `;
-            }else if (itemId === 'uni8') {
+            }else if (universityId === 'uni8') {
                 universityContent.innerHTML = `
                 <div id="u8" ></div>
                 <div class="u1_b">
@@ -1222,7 +1216,7 @@ The Polytechnic University of the Philippines (PUP) is renowned for its commitme
 
                 </div>
                 `;
-            }else if (itemId === 'uni9') {
+            }else if (universityId === 'uni9') {
                 universityContent.innerHTML = `
                 <div id="u9" ></div>
                 <div class="u1_b">
@@ -1321,7 +1315,7 @@ The Polytechnic University of the Philippines (PUP) is renowned for its commitme
 
                 </div>
                 `;
-            }else if (itemId === 'uni10') {
+            }else if (universityId === 'uni10') {
                 universityContent.innerHTML = `
                 <div id="u10" ></div>
                 <div class="u1_b">
@@ -1419,7 +1413,7 @@ The Polytechnic University of the Philippines (PUP) is renowned for its commitme
 
                 </div>
                 `;
-            }else if (itemId === 'uni11') {
+            }else if (universityId === 'uni11') {
                 universityContent.innerHTML = `
                 <div id="u11" ></div>
                 <div class="u1_b">
@@ -1517,7 +1511,7 @@ The Polytechnic University of the Philippines (PUP) is renowned for its commitme
 
                 </div>
                 `;
-            }else if (itemId === 'uni12') {
+            }else if (universityId === 'uni12') {
                 universityContent.innerHTML = `
                 <div id="u12" ></div>
                 <div class="u1_b">
@@ -1614,12 +1608,59 @@ The Polytechnic University of the Philippines (PUP) is renowned for its commitme
                 </div>
                 `;
             }
-            
+        }
+        items.forEach(function (item) {
+        item.addEventListener('click', function () {
+            // Get the ID of the clicked item
+            var itemId = this.getAttribute('id');
+
+            // Set universityId based on the clicked item
+            if (itemId === 'uni1') {
+                universityId = 'uni1';
+            } else if (itemId === 'uni2') {
+                universityId = 'uni2';
+            } else if (itemId === 'uni3') {
+                universityId = 'uni3';
+            }
+            else if (itemId === 'uni4') {
+                universityId = 'uni4';
+            }
+            else if (itemId === 'uni5') {
+                universityId = 'uni5';
+            }
+            else if (itemId === 'uni6') {
+                universityId = 'uni6';
+            }
+            else if (itemId === 'uni7') {
+                universityId = 'uni7';
+            }
+            else if (itemId === 'uni8') {
+                universityId = 'uni8';
+            }
+            else if (itemId === 'uni9') {
+                universityId = 'uni9';
+            }
+            else if (itemId === 'uni10') {
+                universityId = 'uni10';
+            }
+            else if (itemId === 'uni11') {
+                universityId = 'uni11';
+            }
+            else if (itemId === 'uni12') {
+                universityId = 'uni12';
+            }
+
+
+            // Update the university content
+            updateUniversityContent(universityId);
         });
     });
+
+    // Update university content initially
+    updateUniversityContent(universityId);
 });
 
      </script>
-      
-</body>
+      <script src="../html/autocomplete.js"></script>
+    </body>
 </html>

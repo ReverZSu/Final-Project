@@ -47,7 +47,15 @@
             <a href="../html/page_4_university.html">Universities</a>
             <a href="../html/page_5_about.html">About Us</a>
             <a href="../html/page_6_contact.html">Contacts</a>
-            <input type="search" class="search_box" placeholder="Search..">
+        </div>
+        <div class="search-box">
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Search.." autocomplete="off">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="result-box">
+                
+            </div>
         </div>
         <div class="side-bar">
             <div class="side-menu" id="pageSelector">
@@ -1044,40 +1052,44 @@
         </div>
     </div>
     </div>
+
+
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-    // Extract course identifier from the URL
-    var urlParams = new URLSearchParams(window.location.search);
-    var courseId = urlParams.get('course');
+        document.addEventListener('DOMContentLoaded', function () 
+        {
+            // Extract course identifier from the URL
+            var urlParams = new URLSearchParams(window.location.search);
+            var courseId = urlParams.get('course');
 
-    // If courseId is not null and matches a valid course ID, show the corresponding content
-    if (courseId) {
-        showContent(courseId);
-    }
-});
+            // If courseId is not null and matches a valid course ID, show the corresponding content
+            if (courseId) {
+                showContent(courseId);
+                }
+            });
 
-function showContent(courseId) {
-    // Hide all content divs
-    var contentDivs = document.querySelectorAll('.body_content div');
-    for (var i = 0; i < contentDivs.length; i++) {
-        contentDivs[i].style.display = 'none';
-    }
+            function showContent(courseId) {
+            // Hide all content divs
+            var contentDivs = document.querySelectorAll('.body_content div');
+            for (var i = 0; i < contentDivs.length; i++) {
+                contentDivs[i].style.display = 'none';
+            }
 
-    // Show the selected content div and its child div with class body_1
-    var selectedDiv = document.getElementById(courseId);
-    if (selectedDiv) {
-        selectedDiv.style.display = 'block';
-        var body1Div = selectedDiv.querySelector('.body_1');
-        if (body1Div) {
-            body1Div.style.display = 'block';
+            // Show the selected content div and its child div with class body_1
+            var selectedDiv = document.getElementById(courseId);
+            if (selectedDiv) {
+                selectedDiv.style.display = 'block';
+                var body1Div = selectedDiv.querySelector('.body_1');
+                if (body1Div) {
+                    body1Div.style.display = 'block';
+                }
+            }
+
+            // Show the body_content div
+            var bodyContentDiv = document.querySelector('.body_content');
+            bodyContentDiv.style.display = 'block';
         }
-    }
-
-    // Show the body_content div
-    var bodyContentDiv = document.querySelector('.body_content');
-    bodyContentDiv.style.display = 'block';
-}
-
     </script>
+
+    <script src="../html/autocomplete.js"></script>
 </body>
 </html>

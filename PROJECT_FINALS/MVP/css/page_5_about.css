@@ -27,46 +27,88 @@ body {
     width: 80px;
 }
 .navigation{
-    background-color: #FEFAE0;
-    grid-column: 4/13;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    padding: 1rem;
-    padding-right: 5rem; 
+  background-color: #FEFAE0;
+  grid-column: 4/10;
+  font-size: 18px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 1rem;
 
-    
+  
 }
 .navigation a{
-    margin: 20px;
-    color: #1d3557;
-    font-weight: 500;
-    text-decoration: none;
-    transition: 
-        transform 0.3s;
+  margin: 20px;
+  color: #1d3557;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 
+      transform 0.3s;
 }
-.search_box{
-    width: 25%;
-    height: 60%;
-    background: white;
-    color: black;
-    border: 2px solid rgb(100, 94, 94);
-    font-weight: 500;
-    border: none;
-    outline: none;
-    border-radius: 30px;
-    padding: 1rem;
-    transition: 
-        transform 0.3s,
-        background-color 0.3s,
-        color 0.3s,
-        border 0.3s;
+/* search box */
+.search-box{
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.082),
+            0 32px 64px -48px rgba(0, 0, 0, 0.199);
+  grid-row: 1;
+  margin: 1.5rem;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 5px;
+  z-index: 1;
+  position: absolute;
+  right: 50px;
+  width: 400px;
 }
-.search_box:hover{
-    transform:  translateY(-3px);   
-    box-shadow: 2px 2px 5px rgba(82, 82, 82, 0.455);
-    background-color: #f09c0c;
+input{
+  flex: 1;
+  height: 25px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  font-size: 18px;
+  color: #333;
 }
+.row{
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+.row button{
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+.row button .fa-solid{
+  width: 25px;
+  color: #555;
+  font-size: 22px;
+  cursor: pointer;
+}
+::placeholder{
+  color: #555;
+}
+.result-box{
+  position: relative;
+  background: #fff;
+  grid-column: 10/13;
+  max-height: 300px;
+  overflow-y: scroll;
+}
+.result-box ul{
+  border-top:1px solid #999;
+  padding: 15px 10px;
+}
+.result-box ul li{
+  list-style: none;
+  border-radius: 3px;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+.result-box ul li:hover{
+  background: #e9f3ff;
+}
+/* end of search bar*/
+
 .navigation a:hover{
     border-bottom: 2px solid #1d3557;
     transform:  translateY(-3px);

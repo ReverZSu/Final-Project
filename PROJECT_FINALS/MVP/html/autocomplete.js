@@ -1,7 +1,10 @@
 let availableKeywords = [
+    'Home',
     'Courses',
     'Universities',
     'About',
+    'About Courses',
+    'About Universities',
     'Contacts',
     'Architecture',
     'Agriculture',
@@ -67,6 +70,24 @@ function selectInput(list) {
     if (selectedKeyword === 'Courses') {
         window.location.href = '../html/page_3_course.html'; // Redirect to courses page
     }
+    else if (selectedKeyword === 'Home') {
+        window.location.href = '../html/page_2_home.html';   
+    }
+    else if (selectedKeyword === 'Universities') {
+        window.location.href = '../html/page_4_university.html';   
+    }
+    else if (selectedKeyword === 'About') {
+        window.location.href = '../html/page_5_about.html';   
+    }
+    else if (selectedKeyword === 'About Courses') {
+        window.location.href = '../html/page_5_about.html#C';   
+    }
+    else if (selectedKeyword === 'About Universities') {
+        window.location.href = '../html/page_5_about.html#U';   
+    }
+    else if (selectedKeyword === 'Contacts') {
+        window.location.href = '../html/page_6_contact.html';   
+    }
     else if (selectedKeyword === 'Architecture') {
         window.location.href = '../html/page_3_course.html?course=c1';   
     }
@@ -103,6 +124,43 @@ function selectInput(list) {
     else if (selectedKeyword === 'Transportation') {
         window.location.href = '../html/page_3_course.html?course=c12';   
     }
+    else if (selectedKeyword === 'Adamson University') {
+        window.location.href = '../html/page_4_university.html?universityy=uni1';   
+    }
+    else if (selectedKeyword === 'Ateneo de Manila University') {
+        window.location.href = '../html/page_4_university.html?universityy=uni2';   
+    }
+    else if (selectedKeyword === 'De lasalle University') {
+        window.location.href = '../html/page_4_university.html?universityy=uni3';   
+    }
+    else if (selectedKeyword === 'Far Eastern University') {
+        window.location.href = '../html/page_4_university.html?universityy=uni4';   
+    }
+    else if (selectedKeyword === 'Lyceum of the Philippines University') {
+        window.location.href = '../html/page_4_university.html?universityy=uni5';   
+    }
+    else if (selectedKeyword === 'Mapua University') {
+        window.location.href = '../html/page_4_university.html?universityy=uni6';   
+    }
+    else if (selectedKeyword === 'National University') {
+        window.location.href = '../html/page_4_university.html?universityy=uni7';   
+    }
+    else if (selectedKeyword === 'Polytechnic University of the Philippines') {
+        window.location.href = '../html/page_4_university.html?universityy=uni8';   
+    }
+    else if (selectedKeyword === 'San beda University') {
+        window.location.href = '../html/page_4_university.html?universityy=uni9';   
+    }
+    else if (selectedKeyword === 'University of the East') {
+        window.location.href = '../html/page_4_university.html?universityy=uni10';   
+    }
+    else if (selectedKeyword === 'University of the Philippines') {
+        window.location.href = '../html/page_4_university.html?universityy=uni11';   
+    }
+    else if (selectedKeyword === 'University of Santo Tomas') {
+        window.location.href = '../html/page_4_university.html?universityy=uni12';   
+    }
+
     else {
         // Redirect to a generic search results page or handle other keywords
         // Redirect to a page based on the selected keyword
