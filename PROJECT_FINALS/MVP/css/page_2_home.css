@@ -36,14 +36,14 @@ body {
     justify-content: right;
     align-items: center;
     padding: 1rem;
-    
+    padding-right: 5.5rem;
     
     
 }
 .navigation a{
     margin: 20px;
     color: #1d3557;
-    font-size: 18px;
+    font-size:20;
     font-weight: 500;
     text-decoration: none;
     transition: 
