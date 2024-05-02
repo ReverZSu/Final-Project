@@ -164,4 +164,8 @@ input[type="checkbox"] {
         border-bottom-left-radius: 20px;
         border-bottom-right-radius: 20px;
     }
+    .wrapper h1{
+        font-size: 25px;
+        text-align: center;
+    }
 }

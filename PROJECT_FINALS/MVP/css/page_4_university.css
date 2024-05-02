@@ -229,7 +229,7 @@ body {
 .university{
     background-color: rgb(255, 253, 238);
     grid-column: 2/12;
-    grid-row: 8/38;
+    grid-row: 8/10;
 
     display: grid;
     grid-template-columns: repeat(12,1fr);
@@ -524,10 +524,23 @@ margin-top: 10px;
     font-size: 12px;
     color: #fff;
 }
-
-
-
-
+.titlee{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-column: 1/13;
+    grid-row: 1/8;
+    background-color: #FEFAE0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.177), rgba(0, 0, 0, 0.845)),url(../assets/common/bg2.png);
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-size: cover;
+}
+.titlee h1{
+    color:#ffffff;
+    font-size: 60px;
+}
 
 
 
@@ -556,7 +569,7 @@ margin-top: 10px;
 .footer{
     background-color: rgb(247, 211, 114);
     grid-column: 1/13;
-    grid-row: 40/44;
+    grid-row: 11/15;
   
     display: flex;
     justify-content: center;

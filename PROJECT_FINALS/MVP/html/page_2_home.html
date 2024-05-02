@@ -21,8 +21,8 @@
     <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
     <script>
       window.botpressWebChat.init({
-          "composerPlaceholder": "CHAT WITH OPPORTUNITY CHATBOT",
-          "botConversationDescription": "Your Digital Companion for Every Conversation",
+          "composerPlaceholder": "Chat with Bowbot",
+          "botConversationDescription": "OPPORTUNITY CHATBOT",
           "botId": "a6d306d0-a797-438c-b156-be1e53c3eae3",
           "hostUrl": "https://cdn.botpress.cloud/webchat/v1",
           "messagingUrl": "https://messaging.botpress.cloud",
@@ -30,8 +30,12 @@
           "webhookId": "e3dbbd8c-5988-48a2-88d2-64bb1062898a",
           "lazySocket": true,
           "themeName": "prism",
+          "botName": "BOWBOT",
+          "avatarUrl": "https://gravatar.com/avatar/0b72aa2e7494d44dfbfb8848f2dac6ee?s=400&d=robohash&r=x",
+          "stylesheet": "https://webchat-styler-css.botpress.app/prod/eba2567e-6210-4eb7-a0e5-e1edec4a6195/v81003/style.css",
           "frontendVersion": "v1",
-          "showPoweredBy": true,
+          "useSessionStorage": true,
+          "enableConversationDeletion": true,
           "theme": "prism",
           "themeColor": "#2563eb"
       });
@@ -65,7 +69,7 @@
 
             <div class="holder">
                 <h1>Welcome To</h1>
-                <h1 style="font-size: 100px; line-height: 5px; color: #ffb703;">Opportunity</h1>
+                <h1 id="h1_title">Opportunity</h1>
                 <p>Welcome to our portal, where the journey to finding your perfect university begins!
                     Our platform is designed to simplify this process, offering you a comprehensive and user-friendly
                     guide through the vast world of higher education.
@@ -157,7 +161,7 @@
                     its students to excel in various fields both locally and globally.&nbsp;<i
                         class="fa-solid fa-quote-right"></i>
                 </p>
-                <p>To learn more, click the image...</p>
+                <p id="moving">To learn more, click the image...</p>
             </div>
         </div>
         <!---admu-->
@@ -170,7 +174,7 @@
                     rigorous academic standards, vibrant campus culture, and commitment to holistic education,
                     Ateneo continuously produces graduates who excel not only in their respective fields but also
                     in serving society with integrity and compassion.&nbsp;<i class="fa-solid fa-quote-right"></i>
-                <p>To learn more, click the image...</p>
+                <p id="moving">To learn more, click the image...</p>
                 </p>
             </div>
         </div>
@@ -180,7 +184,7 @@
                 <h1>3. De La Salle University</h1>
                 <p><i class="fa-solid fa-quote-left"></i> &nbsp;
                     De La Salle University's ascent to the top echelons of Philippine education can be attributed to its unwavering commitment to academic excellence, innovative research, and holistic student development. With a rich history spanning over a century, the university has consistently upheld rigorous academic standards while adapting to the evolving needs of society. Its faculty, renowned for their expertise and dedication, foster a dynamic learning environment that encourages critical thinking and creativity. &nbsp;<i class="fa-solid fa-quote-right"></i>
-                <p>To learn more, click the image...</p>
+                <p id="moving">To learn more, click the image...</p>
                 </p>
             </div>
         </div>
