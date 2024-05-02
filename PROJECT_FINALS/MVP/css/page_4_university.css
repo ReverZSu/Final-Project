@@ -255,7 +255,7 @@ body {
     border-radius: 10px;
     background-position-x: center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat;        
 }
 #u1{
     background-image: url(../assets/home/adam-build.jpg);
